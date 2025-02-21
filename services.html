@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/services.css">
+
+    <title>COEQUAL INFOTECH</title>
+    <link href="images/logo.png" rel="icon">
+    <style>
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+}
+
+/* Hero Section Styling */
+.hero-01 {
+  font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    background-image: url('https://media.istockphoto.com/id/182812025/photo/water-splash.jpg?s=612x612&w=0&k=20&c=E0mOgOVMT672ezJ_eaE_cjDSz4cLb_dNR3OesqI0R2c=');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Left Side: Text Content */
+.hero-content-02 {
+    flex: 1;
+    padding: 2rem;
+    z-index: 2;
+    text-align: left;
+}
+
+.hero-heading-03 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: navy;
+}
+
+.hero-subheading-04 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+
+.hero-shape-05 {
+position: absolute;
+top: 0;
+right: 0;
+width: 60%;
+height: 100%;
+background-size: cover;
+background-position: center;
+background-image: url('https://media.istockphoto.com/id/182812025/photo/water-splash.jpg?s=612x612&w=0&k=20&c=E0mOgOVMT672ezJ_eaE_cjDSz4cLb_dNR3OesqI0R2c=');
+clip-path: ellipse(100% 70% at 100% 50%);
+animation: slideBackground-06 12s infinite;
+}
+
+/* Background Animation */
+@keyframes slideBackground-06 {
+0% {
+    background-image: url('https://media.istockphoto.com/id/628811958/photo/wastewater-treatment-plant-during-construction.jpg?s=612x612&w=0&k=20&c=twvx-qANT2QSxsTrwARgbOauCYwjzbl-1Zfu_yVaQWg=');
+}
+33% {
+    background-image: url('https://media.istockphoto.com/id/628811958/photo/wastewater-treatment-plant-during-construction.jpg?s=612x612&w=0&k=20&c=twvx-qANT2QSxsTrwARgbOauCYwjzbl-1Zfu_yVaQWg=');
+}
+66% {
+    background-image: url('https://media.istockphoto.com/id/1248006406/photo/aerial-view-of-wastewater-treatment-plant-filtration-of-dirty-or-sewage-water.jpg?s=612x612&w=0&k=20&c=mAxyFIAVZCdDBMDCAVsayaKTW3y_xzo8LUqeAt_FEEU=');
+}
+100% {
+    background-image: url('https://media.istockphoto.com/id/497975685/photo/worker-inspecting-valve.jpg?s=612x612&w=0&k=20&c=C5hfmbVtiiZ-xZPq0BrkanFUKEWZMtSCK03cNAQDXN8=');
+}
+}
+/* Media Queries for Responsiveness */
+
+/* For Large Screens (1200px and above) */
+@media (min-width: 1200px) {
+    .hero-content-02 {
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .hero-heading-03 {
+        font-size: 3.5rem;
+        text-align: left !important;
+    }
+
+    .hero-subheading-04 {
+        font-size: 1.5rem;
+        text-align: left !important;
+    }
+
+    .hero-shape-05 {
+        width: 100%;
+        height: 100%;
+        clip-path: ellipse(65% 90% at 100% 50%);
+    }
+}
+
+/* For Medium Screens (Tablets: 768px to 1200px) */
+@media (max-width: 1200px) {
+    .hero-01 {
+        flex-direction: column;
+        justify-content: flex-start;
+        height: auto;
+        height: 500px;
+        padding: 1.5rem;
+    }
+
+    .hero-content-02 {
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .hero-heading-03 {
+        font-size: 2.5rem;
+        text-align: left !important;
+    }
+
+    .hero-subheading-04 {
+        font-size: 1.2rem;
+        text-align: left !important;
+    }
+
+    .hero-shape-05 {
+        width: 100%;
+        height: 100%;
+        clip-path: ellipse(65% 90% at 100% 50%);
+    }
+}
+
+/* For Small Screens (Phones: 480px to 768px) */
+@media (max-width: 768px) {
+    .hero-01 {
+        flex-direction: column;
+        height: auto;
+        height: 500px;
+        padding: 1rem;
+    }
+
+    .hero-content-02 {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .hero-heading-03 {
+        font-size: 2rem;
+        text-align: left !important;
+    }
+
+    .hero-subheading-04 {
+        font-size: 1rem;
+        text-align: left !important;
+    }
+
+    .hero-shape-05 {
+        width: 100%;
+        height: 100%;
+        clip-path: ellipse(65% 90% at 100% 50%);
+    }
+}
+
+/* For Extra Small Screens (Phones: 480px and below) */
+@media (max-width: 480px) {
+    .hero-01 {
+        flex-direction: column;
+        height: auto;
+        padding: 0.5rem;
+        height: 500px;
+    }
+
+    .hero-content-02 {
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .hero-heading-03 {
+        font-size: 1.8rem;
+        text-align: left !important;
+    }
+
+    .hero-subheading-04 {
+        font-size: 0.9rem;
+        text-align: left !important;
+    }
+
+    .hero-shape-05 {
+        width: 100%;
+        height: 100%;
+        clip-path: ellipse(60% 90% at 100% 50%);
+    }
+}
+
+
+    .service-icon {
+      width: 56px;
+      height: 56px;
+      display: inline-block;
+      background-color: #007bff;
+      border-radius: 50%;
+      color: white;
+      text-align: center;
+      line-height: 56px;
+      font-size: 28px;
+    }
+
+    .arrow-icon {
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      margin-left: 8px;
+      border-left: 2px solid #007bff;
+      border-bottom: 2px solid #007bff;
+      transform: rotate(45deg);
+    }
+
+    .service-card .card-body {
+      position: relative;
+    }
+
+    .service-card .arrow {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+    }
+  </style>
+
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/services/service-5/assets/css/service-5.css">
+  </head>
+  <body>
+
+     
+
+      <div class="site-navbar site-navbar-target js-sticky-header">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-2">
+              <h1 class="my-0 site-logo" ><a href="index.html"><img src="images/newlogo.png" alt="" style="margin-top: 15px;" height="70px" width="90px"></a></h1>
+            </div>
+            <div class="col-10">
+              <nav class="site-navigation text-right" role="navigation">
+                <div class="container">
+                  <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+
+                  <ul class="site-menu main-menu js-clone-nav d-none d-lg-block">
+                    <li class="active"><a href="index.html" class="nav-link">HOME</a></li>
+                    <!-- <li><a href="" class="nav-link">About Us</a></li> -->
+                    <li class="has-children">
+                      <a href="#" class="nav-link">OUR PROJECTS</a>
+                      <ul class="dropdown arrow-top">
+                        <li class="has-children">
+                          <!-- <a href="#">Water Treatment Plant</a> -->
+                          <ul class="dropdown">
+                            <li><a href="#">Industrial Water Treatment Plant</a></li>
+                            <li><a href="#">Drinking Water Treatment Plant</a></li>
+                            <li><a href="#">Water Treatment Equipments</a></li>
+                            <li><a href="#">Demineralization Plant</a></li>
+                            <li><a href="#">Water Purifying Plant</a></li>
+                            <li><a href="#">Alkaline Water Filter Plant</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="watertreatmentplant.html" class="nav-link">Water Treatment Plant</a></li>
+                        <li><a href="wastewaterplant.html" class="nav-link">Waste Water / Sewage treatment Plant</a></li>
+                        <li><a href="effluenttreatment.html" class="nav-link">Effluent Treatment Plant</a></li>
+                        <li><a href="Demineralized.html" class="nav-link">Demineralized (DM) water treatment plant</a></li>
+                        <li><a href="RO Plant.html" class="nav-link">RO Plant</a></li>
+                        <li><a href="Packaged Drinking Plant.html" class="nav-link">Packaged Drinking Plant  </a></li>
+                        <li><a href="Carbonated soft drink plant.html" class="nav-link">Carbonated soft drink plant </a></li>
+                        <li><a href="Goli Soda Plant.html" class="nav-link">Goli Soda Plant  </a></li>
+                        <li><a href="PET Blower Machine.html" class="nav-link">PET Blower Machine </a></li>
+                      
+                      </ul>
+                    </li>
+                    <li class="has-children">
+                      <!-- <a href="#" class="nav-link">Packaging</a> -->
+                      <ul class="dropdown arrow-top">
+                        <li class="has-children">
+                          <a href="#">PET Blowing</a>
+                          <ul class="dropdown">
+                            <li><a href="#">Automatic-PET Blow Moulding</a></li>
+                            <li><a href="#">SEMI-Automatic Stretch Blow Moulding</a></li>
+                            <li><a href="#">PET Jar Blowing Machine</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#" class="nav-link">PET</a></li>
+                        <li><a href="#" class="nav-link">CAN</a></li>
+                        <!-- <li><a href="#" class="nav-link">FAQ</a></li> -->
+                        <li><a href="#" class="nav-link">GLASS</a></li>
+                        <li><a href="#" class="nav-link">POUCH</a></li>
+                        <li><a href="#" class="nav-link">BRICK CARTON</a></li>
+                        <li><a href="#" class="nav-link">GABLE TOP CARTON</a></li>
+                        <li><a href="#" class="nav-link">ASEPTIC DRUM</a></li>
+                      </ul>
+                    </li>
+                    <li class="has-children">
+                        <a href="services.html">SERVICES</a>
+                      </li>
+                    <li class="has-children">
+                      <a href="segment.html">SEGMENT</a>
+                    </li>
+                   
+                    <li class="has-children">
+                      <ul class="dropdown arrow-top">
+                        <li><a href="#" class="nav-link">Packaging</a></li>
+                        <li><a href="#" class="nav-link">Spare Parts & Logistics Training</a></li>
+                        <li><a href="#" class="nav-link">Maintenance</a></li>
+                        <li><a href="#" class="nav-link">Line Improvement</a></li>
+                        <li><a href="#" class="nav-link">Line Conversions & Moulds</a></li>
+                        <li><a href="#" class="nav-link">Audits</a></li>
+                        <li><a href="#" class="nav-link">Training</a></li>
+                      </ul>
+                    </li>
+                    <li class="has-children">
+                      <!-- <a href="#" class="nav-link">Equipments</a> -->
+                      <ul class="dropdown-grid">
+                        <li><a href="process.html"> Processing</a></li> 
+                        <li><a href="petb.html">Blowing</a></li>
+                        <li><a href="preform.html">Preform Sterlization </a></li>
+                        <li><a href="rinserfillercapper.html">Rinser FIlter Capper</a></li>
+                        <li><a href="elevator.html">Elevator</a></li>
+                        <li><a href="glassbottlewasher.html">Glass Bottle Washer</a></li>
+                        <li><a href="labelling.html">Labelling</a></li>
+                        <li><a href="batchcoders.html">Batch Coders</a></li>
+                        <li><a href="bottlehandling.html">Bottle Handling</a></li>
+                        <li><a href="shrink warpping.html">Shrink warpping</a></li>
+                        <li><a href="cartonhandling.html">Carton Handling</a></li>
+                        <li><a href="cratestacker.html">Creat Stacker</a></li>
+                        <li><a href="pallet.html">Paller Equipment</a></li>
+                        <li><a href="stretch.html">Stretch warpping</a></li>
+                        <li><a href="creatwashers.html">Crate Washers</a></li>
+                        <li><a href="refrigeration.html">Refrigeration System</a></li>
+                        <li><a href="airdryer.html">Refrigeration Air Dryer</a></li>
+                        
+                      </ul>
+                    </li>
+                    <li class="has-children">
+                      <a href="help centre.html">HELP CENTRE</a>
+                    </li>
+                    <li class="has-children">
+                      <a href="reach us.html">REACH US</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="hero" style="background-image: url('https://media.istockphoto.com/id/628811958/photo/wastewater-treatment-plant-during-construction.jpg?s=612x612&w=0&k=20&c=twvx-qANT2QSxsTrwARgbOauCYwjzbl-1Zfu_yVaQWg='); background-size: cover; background-position: center; background-repeat: no-repeat;"></div> -->
+       <div class="hero-01">
+    <!-- Text Content -->
+    <div class="hero-content-02">
+        <h1 class="hero-heading-03">OUR SERVICES</h1>
+        <p class="hero-subheading-04">Delivering advanced water treatment <br> <span>solutions for a cleaner tomorrow</span></p>
+    </div>
+
+    <!-- Custom Half-Circle Shape -->
+    <div class="hero-shape-05"></div>
+</div>
+
+
+
+
+    <!-- ---------main---- -->
+
+
+  <section class="bg-light py-3 py-md-5 py-xl-8">
+    <div class="container overflow-hidden">
+      <div class="row gy-4 gy-md-5 gy-lg-0 align-items-center">
+        <div class="col-12 col-lg-5">
+          <div class="row">
+            <div class="col-12 col-xl-11">
+              <h3 class="fs-6 text-secondary mb-3 mb-xl-4 text-uppercase">What We Do?</h3>
+              <h2 class="display-5 mb-3 mb-xl-4">We are giving you perfect solutions with our proficient services.</h2>
+              <p class="mb-3 mb-xl-4">Our comprehensive suite of services is designed to meet your every need and help you thrive in today's dynamic business landscape. Contact us today to embark on a journey of growth, innovation, and unparalleled support. Your success is our priority.</p>
+              <a href="#!" class="btn bsb-btn-2xl btn-primary rounded-pill">More Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-7 overflow-hidden">
+          <div class="row gy-4">
+            <!-- Service 1 -->
+            <div class="col-12 col-sm-6">
+              <div class="card border-0 border-bottom border-primary shadow-sm">
+                <div class="card-body text-center p-4 p-xxl-5">
+                  <div class="service-icon">M</div>
+                  <h4 class="mb-4">Market Research</h4>
+                  <p class="mb-4 text-secondary">We can help you to understand your target market and identify new opportunities for growth. We offer a variety of research services.</p>
+                  <a href="#!" class="fw-bold text-decoration-none link-primary">
+                    Learn More
+                    <div class="arrow-icon"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Service 2 -->
+            <div class="col-12 col-sm-6">
+              <div class="card border-0 border-bottom border-primary shadow-sm">
+                <div class="card-body text-center p-4 p-xxl-5">
+                  <div class="service-icon">W</div>
+                  <h4 class="mb-4">Web Design</h4>
+                  <p class="mb-4 text-secondary">We can help you to create a visually appealing and user-friendly website. We take into account your brand identity and target audience.</p>
+                  <a href="#!" class="fw-bold text-decoration-none link-primary">
+                    Learn More
+                    <div class="arrow-icon"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Service 3 -->
+            <div class="col-12 col-sm-6">
+              <div class="card border-0 border-bottom border-primary shadow-sm">
+                <div class="card-body text-center p-4 p-xxl-5">
+                  <div class="service-icon">D</div>
+                  <h4 class="mb-4">Daily Updates</h4>
+                  <p class="mb-4 text-secondary">We provide our clients with daily updates on their business performance. This includes data on website traffic and sales.</p>
+                  <a href="#!" class="fw-bold text-decoration-none link-primary">
+                    Learn More
+                    <div class="arrow-icon"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Service 4 -->
+            <div class="col-12 col-sm-6">
+              <div class="card border-0 border-bottom border-primary shadow-sm">
+                <div class="card-body text-center p-4 p-xxl-5">
+                  <div class="service-icon">S</div>
+                  <h4 class="mb-4">Free Support</h4>
+                  <p class="mb-4 text-secondary">We offer free support to all of our clients. This means that you can always get help when you need it, no matter what time it is.</p>
+                  <a href="#!" class="fw-bold text-decoration-none link-primary">
+                    Learn More
+                    <div class="arrow-icon"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+              <div class="col-12 col-sm-6">
+              <div class="card border-0 border-bottom border-primary shadow-sm">
+                <div class="card-body text-center p-4 p-xxl-5">
+                  <div class="service-icon">D</div>
+                  <h4 class="mb-4">Daily Updates</h4>
+                  <p class="mb-4 text-secondary">We provide our clients with daily updates on their business performance. This includes data on website traffic and sales.</p>
+                  <a href="#!" class="fw-bold text-decoration-none link-primary">
+                    Learn More
+                    <div class="arrow-icon"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+              <div class="col-12 col-sm-6">
+              <div class="card border-0 border-bottom border-primary shadow-sm">
+                <div class="card-body text-center p-4 p-xxl-5">
+                  <div class="service-icon">D</div>
+                  <h4 class="mb-4">Daily Updates</h4>
+                  <p class="mb-4 text-secondary">We provide our clients with daily updates on their business performance. This includes data on website traffic and sales.</p>
+                  <a href="#!" class="fw-bold text-decoration-none link-primary">
+                    Learn More
+                    <div class="arrow-icon"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+    <div class="flowchart-section">
+        <h1>Our Products are Supported by a Spectrum of Allied Services</h1>
+        <p>
+            The flow chart below illustrates the step-by-step process involved in Carbonated Soft Drink (CSD) production. 
+            Each stage is crucial in ensuring the quality and efficiency of the final product, from RO water treatment 
+            to the final dispatch. Explore the process for a better understanding of how we deliver excellence.
+        </p>
+        <p>To ensure our team remains at the forefront of industry advancements, we conduct regular technical and development training programs. These initiatives help sharpen the skills of our service personnel and keep them updated on the latest technological innovations in environmental engineering.</p>
+        <p>At COEQUAL INFOTECH, the key emphasis is always on achieving Continued Customer Delight. We undertake detailed, periodical surveys to identify and address any gaps in our service offerings. This proactive approach also allows us to gain valuable insights into evolving market preferences, helping us adjust and tailor our offerings to meet changing demands.</p>
+        <p>A testament to our success in delivering high-quality services is the fact that a significant portion of our revenue comes from existing customers and their referrals. Our commitment to excellence is reflected in our strong customer relationships and repeat business.</p>
+
+      </div>
+      
+
+    <!-- -------cards--------- -->
+
+    <section class="ezy__service14">
+        <div class="container">
+            <div class="row justify-content-center mb-4 mb-md-5">
+                <div class="col-lg-6 text-center">
+                    <h2 class="ezy__service14-heading mb-4">EXPLORE NOW</h2>
+                    <p class="ezy__service14-sub-heading mb-0">Had creeping had, appear that made living morning over brought stars likeness first, said Don't god Upon them days them.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
+                <div class="col-sm-6 col-md-4 mt-3 mt-sm-4">
+                    <div class="ezy__service14-card"
+                        style="background-image: url(images/Free-demo.avif);">
+                        <div class="ezy__service14-popup-card p-3 p-lg-5">
+                            <h4 class="ezy__service14-title fs-4 mb-3">Free-demo | Presentation</h4>
+                            <p class="ezy__service14-content mb-0">Explore our innovative solutions with a customized presentation tailored to your needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mt-3 mt-sm-4">
+                    <div class="ezy__service14-card active"
+                        style="background-image: url(images/Laboratorytest.avif);">
+                        <div class="ezy__service14-popup-card p-3 p-lg-5">
+                            <h4 class="ezy__service14-title fs-4 mb-3">Laboratory Test</h4>
+                            <p class="ezy__service14-content mb-0">Accurate and reliable laboratory testing for water, beverages, and industrial processes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mt-3 mt-sm-4">
+                    <div class="ezy__service14-card"
+                        style="background-image: url(images/Design\ and\ Product\ Executive.webp);">
+                        <div class="ezy__service14-popup-card p-3 p-lg-5">
+                            <h4 class="ezy__service14-title fs-4 mb-3">Design and Product Executive</h4>
+                            <p class="ezy__service14-content mb-0">Creating tailored water treatment systems for industrial and commercial applications.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mt-3 mt-sm-4">
+                    <div class="ezy__service14-card"
+                        style="background-image: url(images/Revamping\ &\ upgrading.png);">
+                        <div class="ezy__service14-popup-card p-3 p-lg-5">
+                            <h4 class="ezy__service14-title fs-4 mb-3">Revamping & upgrading</h4>
+                            <p class="ezy__service14-content mb-0">Expanding the capacity of existing systems to meet growing operational needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mt-3 mt-sm-4">
+                    <div class="ezy__service14-card"
+                        style="background-image: url(images/Delivery\ &\ Installation.avif);">
+                        <div class="ezy__service14-popup-card p-3 p-lg-5">
+                            <h4 class="ezy__service14-title fs-4 mb-3">Delivery & Installation</h4>
+                            <p class="ezy__service14-content mb-0">Advising on modifications or enhancements required for optimal performance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mt-3 mt-sm-4">
+                    <div class="ezy__service14-card"
+                        style="background-image: url(images/Site-Evaluation\ &\ Recommendations.avif);">
+                        <div class="ezy__service14-popup-card p-3 p-lg-5">
+                            <h4 class="ezy__service14-title fs-4 mb-3">Site-Evaluation & Recommendations</h4>
+                            <p class="ezy__service14-content mb-0">Testing of raw water or wastewater to identify impurities and treatment requirements.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------footer start----- -->
+
+    <footer id="footer" class="footer-1">
+      <div class="main-footer widgets-dark typo-light">
+      <div class="container">
+      <div class="row">
+        
+      <div class="col-xs-12 col-sm-6 col-md-3">
+      <div class="widget subscribe no-box">
+      <h5 class="widget-title">COEQUAL INFOTECH<span></span></h5>
+      <p class="footer-text text-light opacity-75 mt-4">
+          <a href="https://www.google.com/maps/search/?api=1&query=101+A+Block+Sarovar+Mansion+1st+Floor+Dodda+Banaswadi+Main+Road+Annaiah+Reddy+Layout+Banaswadi+Bengaluru+Karnataka+560043" target="_blank" class="text-light" style="text-decoration: none;">
+              <i class='fas fa-map-marker-alt' style='font-size:25px;color:yellow'></i>
+              #101, A' Block, Sarovar Mansion, 1st Floor, Dodda Banaswadi Main Road,
+              Annaiah Reddy Layout, Banaswadi, Bengaluru, Karnataka 560043.
+          </a>
+      </p>    
+      </div>
+      </div>
+      
+      <div class="col-xs-12 col-sm-6 col-md-3">
+      <div class="widget no-box">
+      <h5 class="widget-title">Quick Links<span></span></h5>
+      <ul class="thumbnail-widget">
+      <li>
+      <div class="thumb-content"><a href="watertreatmentplant.html">Water Treatment Plant</a></div>	
+      </li>
+      <li>
+      <div class="thumb-content"><a href="wastewaterplant.html">Sewage treatment Plant</a></div>	
+      </li>
+      <li>
+      <div class="thumb-content"><a href="effluenttreatment.html">Effluent Treatment Plant</a></div>	
+      </li>
+      <li>
+      <div class="thumb-content"><a href="Packaged Drinking Plant.html">Packaged Drinking Plant</a></div>	
+      </li>
+      <li>
+      <div class="thumb-content"><a href="Carbonated soft drink plant.html">Carbonated soft drink plant</a></div>	
+      </li>
+      <li>
+      <div class="thumb-content"><a href="PET Blower Machine.html">PET Blower Machine</a></div>	
+      </li>
+      <li>
+      <div class="thumb-content"><a href="Goli Soda Plant.html">Goli Soda Plant</a></div>	
+      </li>
+      </ul>
+      </div>
+      </div>
+      
+      <div class="col-xs-12 col-sm-6 col-md-3">
+      <div class="widget no-box">
+      <h5 class="widget-title">Get Quote<span></span></h5>
+      <p>Get access to your full Training and Marketing Suite.</p>
+      <a class="btn" href="reach us.html" target="_blank">Quote</a>
+    </div>
+      </div>
+      
+      <div class="col-xs-12 col-sm-6 col-md-3">
+      
+      <div class="widget no-box">
+      <h5 class="widget-title">Contact Us<span></span></h5>
+      
+      <p><a href="mailto:info@domain.com" title="glorythemes">info@coequalinfotech.org</a></p>
+      <ul class="social-footer2">
+      <li class=""><a title="youtube" target="_blank" href="https://bit.ly/3m9avif"><img alt="youtube" width="30" height="30" src="data:image/png;base64,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"></a></li>
+      <li class=""><a href="https://www.facebook.com/" target="_blank" title="Facebook"><img alt="Facebook" width="30" height="30" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAKT2lDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjanVNnVFPpFj333vRCS4iAlEtvUhUIIFJCi4AUkSYqIQkQSoghodkVUcERRUUEG8igiAOOjoCMFVEsDIoK2AfkIaKOg6OIisr74Xuja9a89+bN/rXXPues852zzwfACAyWSDNRNYAMqUIeEeCDx8TG4eQuQIEKJHAAEAizZCFz/SMBAPh+PDwrIsAHvgABeNMLCADATZvAMByH/w/qQplcAYCEAcB0kThLCIAUAEB6jkKmAEBGAYCdmCZTAKAEAGDLY2LjAFAtAGAnf+bTAICd+Jl7AQBblCEVAaCRACATZYhEAGg7AKzPVopFAFgwABRmS8Q5ANgtADBJV2ZIALC3AMDOEAuyAAgMADBRiIUpAAR7AGDIIyN4AISZABRG8lc88SuuEOcqAAB4mbI8uSQ5RYFbCC1xB1dXLh4ozkkXKxQ2YQJhmkAuwnmZGTKBNA/g88wAAKCRFRHgg/P9eM4Ors7ONo62Dl8t6r8G/yJiYuP+5c+rcEAAAOF0ftH+LC+zGoA7BoBt/qIl7gRoXgugdfeLZrIPQLUAoOnaV/Nw+H48PEWhkLnZ2eXk5NhKxEJbYcpXff5nwl/AV/1s+X48/Pf14L7iJIEyXYFHBPjgwsz0TKUcz5IJhGLc5o9H/LcL//wd0yLESWK5WCoU41EScY5EmozzMqUiiUKSKcUl0v9k4t8s+wM+3zUAsGo+AXuRLahdYwP2SycQWHTA4vcAAPK7b8HUKAgDgGiD4c93/+8//UegJQCAZkmScQAAXkQkLlTKsz/HCAAARKCBKrBBG/TBGCzABhzBBdzBC/xgNoRCJMTCQhBCCmSAHHJgKayCQiiGzbAdKmAv1EAdNMBRaIaTcA4uwlW4Dj1wD/phCJ7BKLyBCQRByAgTYSHaiAFiilgjjggXmYX4IcFIBBKLJCDJiBRRIkuRNUgxUopUIFVIHfI9cgI5h1xGupE7yAAygvyGvEcxlIGyUT3UDLVDuag3GoRGogvQZHQxmo8WoJvQcrQaPYw2oefQq2gP2o8+Q8cwwOgYBzPEbDAuxsNCsTgsCZNjy7EirAyrxhqwVqwDu4n1Y8+xdwQSgUXACTYEd0IgYR5BSFhMWE7YSKggHCQ0EdoJNwkDhFHCJyKTqEu0JroR+cQYYjIxh1hILCPWEo8TLxB7iEPENyQSiUMyJ7mQAkmxpFTSEtJG0m5SI+ksqZs0SBojk8naZGuyBzmULCAryIXkneTD5DPkG+Qh8lsKnWJAcaT4U+IoUspqShnlEOU05QZlmDJBVaOaUt2ooVQRNY9aQq2htlKvUYeoEzR1mjnNgxZJS6WtopXTGmgXaPdpr+h0uhHdlR5Ol9BX0svpR+iX6AP0dwwNhhWDx4hnKBmbGAcYZxl3GK+YTKYZ04sZx1QwNzHrmOeZD5lvVVgqtip8FZHKCpVKlSaVGyovVKmqpqreqgtV81XLVI+pXlN9rkZVM1PjqQnUlqtVqp1Q61MbU2epO6iHqmeob1Q/pH5Z/YkGWcNMw09DpFGgsV/jvMYgC2MZs3gsIWsNq4Z1gTXEJrHN2Xx2KruY/R27iz2qqaE5QzNKM1ezUvOUZj8H45hx+Jx0TgnnKKeX836K3hTvKeIpG6Y0TLkxZVxrqpaXllirSKtRq0frvTau7aedpr1Fu1n7gQ5Bx0onXCdHZ4/OBZ3nU9lT3acKpxZNPTr1ri6qa6UbobtEd79up+6Ynr5egJ5Mb6feeb3n+hx9L/1U/W36p/VHDFgGswwkBtsMzhg8xTVxbzwdL8fb8VFDXcNAQ6VhlWGX4YSRudE8o9VGjUYPjGnGXOMk423GbcajJgYmISZLTepN7ppSTbmmKaY7TDtMx83MzaLN1pk1mz0x1zLnm+eb15vft2BaeFostqi2uGVJsuRaplnutrxuhVo5WaVYVVpds0atna0l1rutu6cRp7lOk06rntZnw7Dxtsm2qbcZsOXYBtuutm22fWFnYhdnt8Wuw+6TvZN9un2N/T0HDYfZDqsdWh1+c7RyFDpWOt6azpzuP33F9JbpL2dYzxDP2DPjthPLKcRpnVOb00dnF2e5c4PziIuJS4LLLpc+Lpsbxt3IveRKdPVxXeF60vWdm7Obwu2o26/uNu5p7ofcn8w0nymeWTNz0MPIQ+BR5dE/C5+VMGvfrH5PQ0+BZ7XnIy9jL5FXrdewt6V3qvdh7xc+9j5yn+M+4zw33jLeWV/MN8C3yLfLT8Nvnl+F30N/I/9k/3r/0QCngCUBZwOJgUGBWwL7+Hp8Ib+OPzrbZfay2e1BjKC5QRVBj4KtguXBrSFoyOyQrSH355jOkc5pDoVQfujW0Adh5mGLw34MJ4WHhVeGP45wiFga0TGXNXfR3ENz30T6RJZE3ptnMU85ry1KNSo+qi5qPNo3ujS6P8YuZlnM1VidWElsSxw5LiquNm5svt/87fOH4p3iC+N7F5gvyF1weaHOwvSFpxapLhIsOpZATIhOOJTwQRAqqBaMJfITdyWOCnnCHcJnIi/RNtGI2ENcKh5O8kgqTXqS7JG8NXkkxTOlLOW5hCepkLxMDUzdmzqeFpp2IG0yPTq9MYOSkZBxQqohTZO2Z+pn5mZ2y6xlhbL+xW6Lty8elQfJa7OQrAVZLQq2QqboVFoo1yoHsmdlV2a/zYnKOZarnivN7cyzytuQN5zvn//tEsIS4ZK2pYZLVy0dWOa9rGo5sjxxedsK4xUFK4ZWBqw8uIq2Km3VT6vtV5eufr0mek1rgV7ByoLBtQFr6wtVCuWFfevc1+1dT1gvWd+1YfqGnRs+FYmKrhTbF5cVf9go3HjlG4dvyr+Z3JS0qavEuWTPZtJm6ebeLZ5bDpaql+aXDm4N2dq0Dd9WtO319kXbL5fNKNu7g7ZDuaO/PLi8ZafJzs07P1SkVPRU+lQ27tLdtWHX+G7R7ht7vPY07NXbW7z3/T7JvttVAVVN1WbVZftJ+7P3P66Jqun4lvttXa1ObXHtxwPSA/0HIw6217nU1R3SPVRSj9Yr60cOxx++/p3vdy0NNg1VjZzG4iNwRHnk6fcJ3/ceDTradox7rOEH0x92HWcdL2pCmvKaRptTmvtbYlu6T8w+0dbq3nr8R9sfD5w0PFl5SvNUyWna6YLTk2fyz4ydlZ19fi753GDborZ752PO32oPb++6EHTh0kX/i+c7vDvOXPK4dPKy2+UTV7hXmq86X23qdOo8/pPTT8e7nLuarrlca7nuer21e2b36RueN87d9L158Rb/1tWeOT3dvfN6b/fF9/XfFt1+cif9zsu72Xcn7q28T7xf9EDtQdlD3YfVP1v+3Njv3H9qwHeg89HcR/cGhYPP/pH1jw9DBY+Zj8uGDYbrnjg+OTniP3L96fynQ89kzyaeF/6i/suuFxYvfvjV69fO0ZjRoZfyl5O/bXyl/erA6xmv28bCxh6+yXgzMV70VvvtwXfcdx3vo98PT+R8IH8o/2j5sfVT0Kf7kxmTk/8EA5jz/GMzLdsAAAAgY0hSTQAAeiUAAICDAAD5/wAAgOkAAHUwAADqYAAAOpgAABdvkl/FRgAAAX1JREFUeNrs1jFrFFEQB/DfeWpCMFVMkaQIsRG1SWORb6DGKkUgpE6qJNiIH0YQFAtFUFKnEC1iY6XBq64SixCwkEvIEXNjM8ISBPe8W6/IDQzLezM7/7fzZv6ztYgwCLlgQDIw4Is9vDuJe5jHKDoI7GC7KuAxbOAu2gl6iimMVAU8htcJ9AANtHCCLdyvKtWbWRt3CnvXcAu3y9ZNt8B1LOFhYe8R1rGXWXhVKlJEdKNzEbEbERO5vh4RzYi42WWcrttpFMc4LKS4gS9VtNMyFvPuZhK8nbYjLOB5rtt4ivd/C1orQZk7WbEv8qANfEjblTzUePqs4WNWe89fHHiHZ3+wtfCysJ7PAuwLZX7L/vycupusBTfwqWBbwdd+3fEmJtL3Et7gKg4wm/e8mr4n2O8XcCv1t/zI9Euq/I5m1dPpMmr9mHDnbx4PgctK58zzvwDXC+xUL8tUvc7jn6mPs3+nyzJVr8AdPElO7iSdvv0X4Nrwh34IXJX8GgCPbKxZUJtpYgAAAABJRU5ErkJggg=="></a></li>
+      <li class=""><a href="https://twitter.com" target="_blank" title="Twitter"><img alt="Twitter" width="30" height="30" src="data:image/png;base64,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"></a></li>
+      <li class=""><a title="instagram" target="_blank" href="https://www.instagram.com/"><img alt="instagram" width="30" height="30" src="data:image/png;base64,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"></a></li>
+      </ul>
+      </div>
+      </div>
+      
+      </div>
+      </div>
+      </div>
+        
+      <div class="footer-copyright">
+      <div class="container">
+      <div class="row">
+      <div class="col-md-12 text-center">
+      <p>Copyright Company Name © 2024. All rights reserved.</p>
+      </div>
+      </div>
+      </div>
+      </div>
+      </footer>
+<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
