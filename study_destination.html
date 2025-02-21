@@ -1,0 +1,2007 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>COEQUAL SERVICES</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="COEQUAL SERVICES" name="keywords">
+    <meta content="COEQUAL SERVICES" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/study_destination.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+        <link href="css/dropdown.css" rel="stylesheet">
+
+   
+  <!-- -------------------------------------------------------icon sticky side bar css---------------------------------- --> 
+
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://www.cssscript.com/demo/creating-hexagon-buttons-with-pure-css-css3/assets/css/hexagons.min.css"> 
+  
+  <!---------------------------------------------------------icon sticky side bar css---------------------------------- --> 
+  <style>
+    /* Popup Container */
+/* Popup Container */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; /* Set width to 90% for better fitting on small screens */
+    height: 80%; /* Set height to 80% for smaller devices */
+    max-width: 1393px;
+    max-height: 991px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+/* Make content scrollable */
+.popup-content {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    overflow-y: auto;
+    /* max-height: 300px; Restrict the height to enable scrolling */
+}
+
+/* Content in Popup */
+.popup-content h2 {
+    margin-top: 0;
+}
+
+.popup-content p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Overlay */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Default Image Style */
+.popup-image {
+    width: 100%; /* Set width to 100% for better responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    padding-top: 51px;
+    border-radius: 5px;
+    margin: 9px;
+    object-fit: cover;
+}
+
+/* Close Button */
+.close-button {
+    background: PEACHPUFF;
+    border: none;
+    font-size: 1.4em;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Colorful Line */
+.colorful-line {
+    height: 10px; /* Thickness of the line */
+    background: linear-gradient(90deg, #4466bf, #2c2adb, #4e45e2, #3830cc, blue, #545b90, #a6a3d9); /* Gradient */
+    border-radius: 2.5px; /* Rounded edges */
+}
+
+/* Flex Container for Categories */
+.container-099 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Add gap between items */
+}
+
+/* Categories */
+.Categories-09 {
+    width: 45%; /* Set width to 45% to fit two categories in a row */
+    margin-bottom: 20px; /* Add some space below */
+}
+
+/* List Styling */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Responsive Media Queries */
+
+/* For small screens (mobiles) */
+@media screen and (max-width: 600px) {
+    .popup-container {
+        width: 95%; /* Make popup width almost full screen */
+        height: 75%; /* Adjust height */
+        max-height: 80%; /* Limit max height */
+    }
+
+    .popup-image {
+        height: 200px;
+        padding-right: 23px;
+        border-radius: 11pc;
+    }
+
+
+    .close-button {
+        font-size: 1.2em; /* Make the close button smaller */
+        top: 5px; /* Adjust top position */
+        right: 5px;
+    }
+
+    .container-099 {
+        flex-direction: column; /* Stack the categories vertically on small screens */
+        align-items: center; /* Center-align items */
+    }
+
+    .Categories-09 {
+        width: 90%; /* Make categories take more width on mobile */
+    }
+}
+
+/* For medium screens (tablets) */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .popup-container {
+        width: 80%; /* Adjust width for tablet */
+        max-width: 900px; /* Max width for tablet */
+        height: 70%; /* Adjust height */
+    }
+
+    .popup-image {
+        height: 200px;
+        padding-right: 23px;
+        border-radius: 11pc;
+    }
+
+
+    .close-button {
+        font-size: 1.3em; /* Slightly larger button */
+        top: 10px;
+        right: 10px;
+    }
+
+    .container-099 {
+        flex-wrap: wrap; /* Allow categories to wrap on tablet screens */
+        justify-content: center; /* Center categories */
+    }
+
+    .Categories-09 {
+        width: 40%; /* Adjust width for medium screens */
+    }
+}
+
+/* For large screens (desktops) */
+@media screen and (min-width: 901px) {
+    .popup-container {
+        display: none;
+    position: fixed;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 102%;
+    height: 82%;
+    max-width: 1393px;
+    max-height: 991px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    overflow-y: auto;
+    }
+
+    .popup-image {
+        width: 71%;
+    height: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 11pc;
+    margin: 10px;
+    object-fit: cover;
+    }
+
+   
+
+    .close-button {
+        font-size: 1.4em; /* Default size for large screens */
+        top: 10px;
+        right: 10px;
+    }
+
+    .container-099 {
+        justify-content: space-between; /* Spread categories for larger screens */
+    }
+
+    .Categories-09 {
+        width: 45%; /* Keep categories at 45% width */
+        padding-left: 35px;
+    }
+}
+
+    /* Default styling for .popup-icon */
+.popup-icon {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: auto;
+}
+
+/* For small screens (up to 600px) */
+@media screen and (max-width: 600px) {
+    .popup-icon {
+        width: 60%; /* Adjust width for smaller screens */
+        top: 35%; /* Adjust position for better visibility */
+    }
+}
+
+/* For medium screens (601px to 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .popup-icon {
+        width: 50%; /* Adjust width for tablets or medium devices */
+        top: 30%;
+    }
+}
+
+/* For large screens (above 1024px) */
+@media screen and (min-width: 1025px) {
+    .popup-icon {
+        width: 48%;
+        top: 22%;
+    }
+}
+
+
+
+ </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+  
+    <!-- Topbar End -->
+<!-- -------------------------------------------------------icon sticky side bar code--------------------------------------- -->
+<!-- 
+<section class="w3-col w3-opacity-min" id="floating-icons">
+    <div class="w3-container w3-display-right" style="position: fixed; right: 10px; ">
+      Destination Icon
+       <br>
+       <br>
+      <a href="#destinations">
+        <span class="hb inv hb-sm spin-icon">
+          <i class="fa fa-map-marker" aria-hidden="true"style="color: rgb(19, 191, 235);"></i>
+        </span>
+      </a>
+      <br>
+      University Icon
+      <a href="#countrys-tag">
+        <span class="hb inv hb-sm spin-icon">
+          <i class="fa fa-university" aria-hidden="true"style="color: rgb(19, 191, 235);"></i>
+        </span>
+      </a>
+      <br>
+      <a href="#brochure-container">
+        <span class="hb inv hb-sm spin-icon">
+          <i class="fa fa-cogs" aria-hidden="true" style="color: rgb(19, 191, 235);"></i>
+        </span>
+      </a>
+      
+      <br>
+      Our Services Icon
+      <a href="#">
+        <span class="hb inv hb-sm spin-icon">
+          <i class="fas fa-phone" aria-hidden="true"style="color: rgb(19, 191, 235);"></i>
+        </span>
+      </a>
+    </div>
+  </section> -->
+    <!-- -------------------------------------------------------icon sticky side bar code--------------------------------------- -->
+
+    <!-- Navbar Start -->
+    <!-- <div class="container-fluid position-relative p-0"> -->
+       <!-- Navbar & Carousel Start -->
+<div class="container-fluid position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/coequalserviceslogo.png" width="150px" style="margin-bottom: -28px; margin-top: -15px" />
+            </a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about-us.html" class="nav-item nav-link">About Us</a>
+
+                <!-- Dropdown for Services -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Our Services</a>
+                    <div class="dropdown-menu m-0" style="min-width: 20rem;">
+
+                        <!-- Study Abroad -->
+                        <div class="dropdown-submenu">
+                            <a href="studyaboard.html" class="dropdown-item">Study Abroad
+                                <span class="new-label">New</span>
+                            </a>
+                            <div class="dropdown-menu submenu-box">
+                                <a href="study_destination.html" class="dropdown-item">Explore destinations</a>
+                                <a href="study_services.html" class="dropdown-item">Our Services</a>
+                                <a href="form.html" class="dropdown-item">Get your free quote</a>
+                            </div>
+                        </div>
+
+                        <a href="manpowerconsultancy.html" class="dropdown-item">Man Power Consultancy
+                            <span class="new-label">New</span>
+                        </a>
+                        <a href="events.html" class="dropdown-item">COEQUAL Events
+                            <span class="new-label">New</span>
+                        </a>
+                        <a href="finance.html" class="dropdown-item">Financial Services</a>
+                    </div>
+                </div>
+
+                <a href="career.php" class="nav-item nav-link">Careers</a>
+                <a href="contact.php" class="nav-item nav-link">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+        <div class="new-menu">
+            <div class="new-menu-item" data-target="destinations">Destinations</div>
+            <div class="new-menu-item" data-target="countrys-tag">Universities</div>
+            <div class="new-menu-item" data-target="process-overview">Process Overview</div>
+            <div class="new-menu-item" data-target="parallax-container_1">Our Courses</div>
+
+            
+      
+           
+            <!-- <div class="new-menu-item" data-target="arrive-and-thrive">Arrive and thrive</div> -->
+        
+            <a href="form.html">
+                <button  class="new-quote-button">Get FREE Counselling Today!</button>
+              </a>
+              
+             
+        </div>
+      
+
+    <!-- content Start -->
+        
+ <!-- Header Section -->
+<header class="parallax">
+    <div class="hero-text">
+        <h1 class="hero-heading">Study destinations</h1>
+        <strong>
+            <p class="hero-subtext">
+                Empowering Dreams Through 
+                <span class="highlighted-text">Top Study Courses Globally</span>
+            </p>
+        </strong>
+    </div>
+</header>
+
+ <!--------------------------------------------------------------menu------------------------------------------------------------------------------->
+
+
+ <!--------------------------------------------------------------menu------------------------------------------------------------------------------->
+
+ <br>
+ <section id="no1"></section>
+ <center><div class="arrow_bounce">
+    <a class= "smoothScroll" href = "#no1"><i class="fa fa-angle-down fa-5x" aria-hidden="true"></i></a> 
+   </div></center>
+ <br>
+<br>
+ <section id="home_2"></section>
+ <section  id="Cloud Integration for Cross-Platform Systems" class="service-section-unique" >
+    <div class="image-container-unique">
+      <img
+        src="./img/UNIVERSITIES/2_banner_3.png"
+        alt="Need Assistance with Your Study Abroad Applications?"
+      />
+    </div>
+    <div class="text-container-unique">
+      <h2>Destinations to Study Abroad</h2>
+      <p>
+        Start your study abroad journey in these welcoming study locations! Our expert counsellors will guide you in choosing the perfect universities and colleges to match your study abroad aspirations and programs.
+       </p>        
+       
+    </div>  
+  </section>
+
+    <!-- Destinations Section -->
+
+    <section id="destinations">
+        <div class="container">
+            <h2>Explore Our Destinations</h2>
+            <div class="countries">
+                <div class="country" onclick="openPopup('c1')">
+                    <img src="./img/UNIVERSITIES/UnitedKingdom.png" alt="United Kingdom">
+                    <h3>United Kingdom</h3>
+                    <p>Study and work in the UK without hassles.</p>
+                    <a href="#united-kingdom" class="explore-btn" onclick="openPopup('c1')">^</a>
+
+                </div>
+                <div class="country"  onclick="openPopup('c2')">
+                    <img src="./img/UNIVERSITIES/ireland.png" alt="Ireland">
+                    <h3>Ireland</h3>
+                    <p>Unlock opportunities in Ireland.</p>
+                    <a href="#united-kingdom" class="explore-btn" onclick="openPopup('c2')">^</a>
+                </div>
+                <div class="country" onclick="openPopup('c3')">
+                    <img src="./img/UNIVERSITIES/Germany.png" alt="Germany">
+                    <h3>Germany</h3>
+                    <p>Shape your future in Germany.</p>
+                    <a href="#united-kingdom" class="explore-btn" onclick="openPopup('c3')">^</a>
+                </div>
+                <div class="country" onclick="openPopup('c4')">
+                    <img src="./img/UNIVERSITIES/uae.png" alt="UAE">
+                    <h3>UAE</h3>
+                    <p>Build your career in the UAE.</p>
+                    <a href="#united-kingdom" class="explore-btn" onclick="openPopup('c4')">^</a>
+                </div>
+                <div class="country" onclick="openPopup('c5')">
+                    <img src="./img/UNIVERSITIES/Canada.png" alt="Canada">
+                    <h3>Canada</h3>
+                    <p>Experience the best of Canada.</p>
+                    <a href="#united-kingdom" class="explore-btn" onclick="openPopup('c5')">^</a>
+                </div>
+                <div class="country" onclick="openPopup('c6')">
+                    <img src="./img/UNIVERSITIES/usa.png">
+                    <h3>United States</h3>
+                    <p>Discover opportunities in the USA.</p>
+                    <a href="#united-kingdom" class="explore-btn" onclick="openPopup('c6')">^</a>
+                </div>
+                <div class="country" onclick="openPopup('c7')">
+                    <img src="./img/UNIVERSITIES/Switzerland.png" alt="Switzerland">
+                    <h3>Switzerland</h3>
+                    <p>Explore the Swiss excellence.</p>
+                    <a href="#united-kingdom" class="explore-btn" onclick="openPopup('c7')">^</a>
+                </div>
+                <div class="country" onclick="openPopup('c8')">
+                    <img src="./img/UNIVERSITIES//Spain.png" alt="Spain">
+                    <h3>Spain</h3>
+                    <p>Embrace the charm of Spain.</p>
+                    <a href="#united-kingdom" class="explore-btn" onclick="openPopup('c8')">^</a>
+                </div>
+                <div class="country" onclick="openPopup('c9')">
+                    <img src="./img/UNIVERSITIES//France.png" alt="France">
+                    <h3>France</h3>
+                    <p>Study in the heart of Europe: France.</p>
+                    <a href="#united-kingdom" class="explore-btn" onclick="openPopup('c9')">^</a>
+                </div>
+                <div class="country" onclick="openPopup('c10')">
+                    <img src="./img/UNIVERSITIES/Italy.png" alt="Italy">
+                    <h3>Italy</h3>
+                    <p>Experience world-class education in Italy.</p>
+                    <a href="#united-kingdom" class="explore-btn" onclick="openPopup('c10')">^</a>
+                </div>
+            </div>
+        </div>
+    </section>
+                 <!---------------------------------------- Popup Overlay -------------------------------------------------------------------------->
+
+          
+            <div class="popup-overlay" onclick="closePopup()"></div>
+             <!-- Popup Container -->
+        <div id="c1" class="popup-container">
+                <button class="close-button" onclick="closePopup()">×</button>
+                <center><img src="./img/UNIVERSITIES/usa_banner_1.png" alt="Study in the USA" class="popup-image">
+                    <!-- <img src="./img/UNIVERSITIES/Student-Degree-Icon (2) (1).png" alt="Study Icon" class="popup-icon"> -->
+               </center> <div class="colorful-line"></div>
+                <div class="popup-content">
+                    <h2>Study in the United Kingdom</h2>
+                    <p>Studying in the USA provides a dynamic and diverse educational experience. The USA's education system stands out for its flexibility, innovation, and global recognition. The system emphasizes a broad-based approach to learning, allowing students to explore various fields before specializing and encouraging interdisciplinary studies that prepare them for complex, real-world challenges.</p>
+                    <p>Students benefit from diverse academic programs and resources, including state-of-the-art labs, libraries, and online learning platforms. Faculty members often lead their fields, offering students opportunities to engage in groundbreaking research and hands-on projects.</p>
+                </div>
+                <div class="container-099">
+                    <!-- Universities Categories-09 -->
+                    <div class="Categories-09">
+                        <h2>Universities</h2>
+                        <ul>
+                            <li>University of Oxford</li>
+                            <li>University of Cambridge</li>
+                            <li>Imperial College London</li>
+                            <li>London School of Economics and Political Science (LSE)</li>
+                            <li>University College London (UCL)</li>
+                            <li>University of Edinburgh</li>
+                            <li>King's College London</li>
+                            <li>University of Manchester</li>
+                            <li>University of Warwick</li>
+                        </ul>
+                    </div>
+                
+                    <!-- Course Categories Categories-09 -->
+                    <div class="Categories-09">
+                        <h2>Course Categories</h2>
+                        <ul>
+                            <li>Business and Management</li>
+                            <li>Engineering and Technology</li>
+                            <li>Arts and Humanities</li>
+                            <li>Science and Mathematics</li>
+                            <li>Health and Medicine</li>
+                            <li>Law and Legal Studies</li>
+                            <li>Hospitality and Tourism</li>
+                            <li>Architecture and Design</li>
+                            <li>Agriculture and Agribusiness</li>
+                            <li>Psychology and Counseling</li>
+                            <li>Marine Science and Oceanography</li>
+                            <li>Aviation and Aerospace</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+         <!-- Popup Container -->
+        <div id="c2" class="popup-container">
+            <button class="close-button" onclick="closePopup()">×</button>
+            <center><img src="./img/UNIVERSITIES/ireland_banner_2.png" alt="Study in the USA" class="popup-image"></center>
+            <div class="colorful-line"></div>
+            <div class="popup-content">
+                <h2>Study in Ireland</h2>
+                <p>Ireland is renowned for its welcoming culture and high-quality education system. Irish universities focus on fostering creativity and independent thinking, equipping students with the skills to excel in their careers.</p>
+                <p>Ireland’s education sector is closely tied to industry, offering numerous opportunities for internships and research projects in fields like technology, medicine, and business. The country also provides a supportive environment, with dedicated services for international students and a thriving community atmosphere.</p>
+            </div>
+            <div class="container-099">
+                <!-- Universities Categories-09 -->
+                <div class="Categories-09">
+                    <h2>Universities</h2>
+                    <ul>
+                        <li>Trinity College Dublin</li>
+                        <li>University College Dublin (UCD)</li>
+                        <li>National University of Ireland Galway (NUIG)</li>
+                        <li>University College Cork (UCC)</li>
+                        <li>Dublin City University (DCU)</li>
+                        <li>Maynooth University</li>
+                        <li>Royal College of Surgeons in Ireland (RCSI)</li>
+                        <li>Technological University Dublin (TUD)</li>
+                        <li>Waterford Institute of Technology (WIT)</li>
+                    </ul>
+                    
+                </div>
+            
+                <!-- Course Categories Categories-09 -->
+                <div class="Categories-09">
+                    <h2>Course Categories</h2>
+                    <ul>
+                        <li>Business and Management</li>
+                        <li>Engineering and Technology</li>
+                        <li>Arts and Humanities</li>
+                        <li>Science and Mathematics</li>
+                        <li>Health and Medicine</li>
+                        <li>Law and Legal Studies</li>
+                        <li>Hospitality and Tourism</li>
+                        <li>Architecture and Design</li>
+                        <li>Agriculture and Agribusiness</li>
+                        <li>Psychology and Counseling</li>
+                        <li>Marine Science and Oceanography</li>
+                        <li>Aviation and Aerospace</li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+     <!-- Popup Container -->
+    <div id="c3" class="popup-container">
+        <button class="close-button" onclick="closePopup()">×</button>
+        <center> <img src="./img/UNIVERSITIES/germany_banner_3.png" alt="Study in the USA" class="popup-image"></center>
+        <div class="colorful-line"></div>
+        <div class="popup-content">
+            <h2>Study in Germany</h2>
+            <p>Germany is a hub for innovation and engineering excellence, offering tuition-free or low-cost education at many of its public universities. Known for its robust academic programs, Germany provides exceptional training in fields like engineering, science, and business.</p>
+            <p>Students in Germany benefit from modern facilities, research opportunities, and strong ties to industry leaders, preparing them for competitive job markets. Its central location in Europe also allows students to explore diverse cultures while pursuing their studies.</p>
+        </div>
+        <div class="container-099">
+            <!-- Universities Categories-09 -->
+            <div class="Categories-09">
+                <h2>Universities</h2>
+                <ul>
+                    <li>Technical University of Munich (TUM)</li>
+                    <li>Heidelberg University</li>
+                    <li>Ludwig Maximilian University of Munich (LMU)</li>
+                    <li>University of Freiburg</li>
+                    <li>RWTH Aachen University</li>
+                    <li>University of Bonn</li>
+                    <li>University of Hamburg</li>
+                    <li>University of Stuttgart</li>
+                    <li>University of Cologne</li>
+                </ul>
+                
+            </div>
+        
+            <!-- Course Categories Categories-09 -->
+            <div class="Categories-09">
+                <h2>Course Categories</h2>
+                <ul>
+                    <li>Business and Management</li>
+                    <li>Engineering and Technology</li>
+                    <li>Arts and Humanities</li>
+                    <li>Science and Mathematics</li>
+                    <li>Health and Medicine</li>
+                    <li>Law and Legal Studies</li>
+                    <li>Hospitality and Tourism</li>
+                    <li>Architecture and Design</li>
+                    <li>Agriculture and Agribusiness</li>
+                    <li>Psychology and Counseling</li>
+                    <li>Marine Science and Oceanography</li>
+                    <li>Aviation and Aerospace</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+     <!-- Popup Container -->
+    <div id="c4" class="popup-container">
+        <button class="close-button" onclick="closePopup()">×</button>
+        <center><img src="./img/UNIVERSITIES/uae_banner_4.png" alt="Study in the USA" class="popup-image"></center>
+        <div class="colorful-line"></div>
+        <div class="popup-content">
+            <h2>Study in the UAE</h2>
+            <p>The UAE is an emerging global education destination, blending traditional values with cutting-edge innovation. Universities in the UAE offer diverse programs with a focus on technology, business, and international relations, catering to the needs of a dynamic global market.</p>
+            <p>Students benefit from state-of-the-art campuses, multicultural communities, and strong links to global industries. The UAE's strategic location and booming economy also provide excellent internship and job opportunities post-graduation.</p>
+        </div>
+        
+        <div class="container-099">
+            <!-- Universities Categories-09 -->
+            <div class="Categories-09">
+                <h2>Universities</h2>
+                <ul>
+                    <li>United Arab Emirates University (UAEU)</li>
+                    <li>American University of Sharjah (AUS)</li>
+                    <li>University of Sharjah</li>
+                    <li>Khalifa University</li>
+                    <li>Zayed University</li>
+                    <li>Abu Dhabi University</li>
+                    <li>Ajman University</li>
+                    <li>Manipal Academy of Higher Education - Dubai</li>
+                    <li>Canadian University Dubai</li>
+                </ul>
+                
+            </div>
+        
+            <!-- Course Categories Categories-09 -->
+            <div class="Categories-09">
+                <h2>Course Categories</h2>
+                <ul>
+                    <li>Business and Management</li>
+                    <li>Engineering and Technology</li>
+                    <li>Arts and Humanities</li>
+                    <li>Science and Mathematics</li>
+                    <li>Health and Medicine</li>
+                    <li>Law and Legal Studies</li>
+                    <li>Hospitality and Tourism</li>
+                    <li>Architecture and Design</li>
+                    <li>Agriculture and Agribusiness</li>
+                    <li>Psychology and Counseling</li>
+                    <li>Marine Science and Oceanography</li>
+                    <li>Aviation and Aerospace</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Popup Container -->
+    <div id="c5" class="popup-container">
+        <button class="close-button" onclick="closePopup()">×</button>
+        <center><img src="./img/UNIVERSITIES/cannada_banner_5.png" alt="Study in the USA" class="popup-image"></center>
+        <div class="colorful-line"></div>
+        <div class="popup-content">
+            <h2>Study in Canada</h2>
+            <p>Canada is celebrated for its high-quality education system, safety, and inclusivity. Universities emphasize research, innovation, and experiential learning, offering diverse programs in engineering, healthcare, and business.</p>
+            <p>Students benefit from excellent facilities, a multicultural environment, and pathways to permanent residency, making Canada a top destination for education and career growth.</p>
+        </div>
+        <div class="container-099">
+            <!-- Universities Categories-09 -->
+            <div class="Categories-09">
+                <h2>Universities</h2>
+                <ul>
+                    <li>University of Toronto</li>
+                    <li>University of British Columbia (UBC)</li>
+                    <li>McGill University</li>
+                    <li>University of Alberta</li>
+                    <li>University of Waterloo</li>
+                    <li>University of Montreal</li>
+                    <li>Western University</li>
+                    <li>Queen's University</li>
+                    <li>Simon Fraser University (SFU)</li>
+                </ul>
+                
+            </div>
+        
+            <!-- Course Categories Categories-09 -->
+            <div class="Categories-09">
+                <h2>Course Categories</h2>
+                <ul>
+                    <li>Business and Management</li>
+                    <li>Engineering and Technology</li>
+                    <li>Arts and Humanities</li>
+                    <li>Science and Mathematics</li>
+                    <li>Health and Medicine</li>
+                    <li>Law and Legal Studies</li>
+                    <li>Hospitality and Tourism</li>
+                    <li>Architecture and Design</li>
+                    <li>Agriculture and Agribusiness</li>
+                    <li>Psychology and Counseling</li>
+                    <li>Marine Science and Oceanography</li>
+                    <li>Aviation and Aerospace</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+             <!-- Popup Container -->
+
+    <div id="c6" class="popup-container">
+        <button class="close-button" onclick="closePopup()">×</button>
+        <center><img src="./img/UNIVERSITIES/US_banner_6.png" alt="Study in the USA" class="popup-image"></center>
+        <div class="colorful-line"></div>
+        <div class="popup-content">
+            <h2>Study in the United States</h2>
+            <p>The USA offers a dynamic and flexible education system, known for its innovation and global recognition. Students explore diverse fields before specializing, preparing them for real-world challenges.</p>
+            <p>With access to state-of-the-art facilities, top faculty, and extensive research opportunities, the USA ensures a transformative academic experience.</p>
+        </div>
+        <div class="container-099">
+            <!-- Universities Categories-09 -->
+            <div class="Categories-09">
+                <h2>Universities</h2>
+                <ul>
+                    <li>Harvard University</li>
+                    <li>Stanford University</li>
+                    <li>Massachusetts Institute of Technology (MIT)</li>
+                    <li>University of California, Berkeley</li>
+                    <li>University of Chicago</li>
+                    <li>Columbia University</li>
+                    <li>California Institute of Technology (Caltech)</li>
+                    <li>Princeton University</li>
+                    <li>Yale University</li>
+                </ul>
+                
+            </div>
+        
+            <!-- Course Categories Categories-09 -->
+            <div class="Categories-09">
+                <h2>Course Categories</h2>
+                <ul>
+                    <li>Business and Management</li>
+                    <li>Engineering and Technology</li>
+                    <li>Arts and Humanities</li>
+                    <li>Science and Mathematics</li>
+                    <li>Health and Medicine</li>
+                    <li>Law and Legal Studies</li>
+                    <li>Hospitality and Tourism</li>
+                    <li>Architecture and Design</li>
+                    <li>Agriculture and Agribusiness</li>
+                    <li>Psychology and Counseling</li>
+                    <li>Marine Science and Oceanography</li>
+                    <li>Aviation and Aerospace</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+             <!-- Popup Container -->
+
+    <div id="c7" class="popup-container">
+        <button class="close-button" onclick="closePopup()">×</button>
+        <center> <img src="./img/UNIVERSITIES/Switzerland_banner_7.png" alt="Study in the USA" class="popup-image"></center>
+        <div class="colorful-line"></div>
+        <div class="popup-content">
+            <h2>Study in Switzerland</h2>
+            <p>Switzerland is synonymous with academic excellence and innovation, offering world-class programs in hospitality, business, and engineering. Its universities emphasize practical learning and cutting-edge research.</p>
+            <p>With its breathtaking landscapes, multicultural society, and strong industry connections, Switzerland provides an unparalleled educational experience.</p>
+        </div>
+        <div class="container-099">
+            <!-- Universities Categories-09 -->
+            <div class="Categories-09">
+                <h2>Universities</h2>
+                <ul>
+                    <li>ETH Zurich</li>
+                    <li>University of Zurich</li>
+                    <li>University of Geneva</li>
+                    <li>University of Basel</li>
+                    <li>EPFL</li>
+                    <li>University of Lausanne</li>
+                    <li>University of Bern</li>
+                    <li>USI Università della Svizzera italiana</li>
+                    <li>FHNW University of Applied Sciences</li>
+                </ul>
+                
+            </div>
+        
+            <!-- Course Categories Categories-09 -->
+            <div class="Categories-09">
+                <h2>Course Categories</h2>
+                <ul>
+                    <li>Business and Management</li>
+                    <li>Engineering and Technology</li>
+                    <li>Arts and Humanities</li>
+                    <li>Science and Mathematics</li>
+                    <li>Health and Medicine</li>
+                    <li>Law and Legal Studies</li>
+                    <li>Hospitality and Tourism</li>
+                    <li>Architecture and Design</li>
+                    <li>Agriculture and Agribusiness</li>
+                    <li>Psychology and Counseling</li>
+                    <li>Marine Science and Oceanography</li>
+                    <li>Aviation and Aerospace</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+             <!-- Popup Container -->
+
+    <div id="c8" class="popup-container">
+        <button class="close-button" onclick="closePopup()">×</button>
+        <center><img src="./img/UNIVERSITIES/spain_banner_8.png" alt="Study in the USA" class="popup-image"></center>
+        <div class="colorful-line"></div>
+        <div class="popup-content">
+            <h2>Study in Spain</h2>
+            <p>Spain offers a vibrant education system with globally recognized programs in arts, business, and sciences. The country combines rich cultural heritage with modern academic facilities.</p>
+            <p>Students enjoy a warm, welcoming atmosphere, affordable tuition, and an enriching lifestyle, making Spain a great destination for international studies.</p>
+        </div>
+        <div class="container-099">
+            <!-- Universities Categories-09 -->
+            <div class="Categories-09">
+                <h2>Universities</h2>
+                <ul>
+                    <li>University of Barcelona</li>
+                    <li>Autonomous University of Madrid (UAM)</li>
+                    <li>University of Valencia</li>
+                    <li>Complutense University of Madrid</li>
+                    <li>University of Granada</li>
+                    <li>Polytechnic University of Catalonia</li>
+                    <li>University of Navarra</li>
+                    <li>University of Seville</li>
+                    <li>Pompeu Fabra University</li>
+                </ul>
+                
+            </div>
+        
+            <!-- Course Categories Categories-09 -->
+            <div class="Categories-09">
+                <h2>Course Categories</h2>
+                <ul>
+                    <li>Business and Management</li>
+                    <li>Engineering and Technology</li>
+                    <li>Arts and Humanities</li>
+                    <li>Science and Mathematics</li>
+                    <li>Health and Medicine</li>
+                    <li>Law and Legal Studies</li>
+                    <li>Hospitality and Tourism</li>
+                    <li>Architecture and Design</li>
+                    <li>Agriculture and Agribusiness</li>
+                    <li>Psychology and Counseling</li>
+                    <li>Marine Science and Oceanography</li>
+                    <li>Aviation and Aerospace</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+         <!-- Popup Container -->
+
+    <div id="c9" class="popup-container">
+        <button class="close-button" onclick="closePopup()">×</button>
+        <center> <img src="./img/UNIVERSITIES/france_banner_9.png" alt="Study in the USA" class="popup-image"></center>
+         
+        <div class="colorful-line"></div>
+        <div class="popup-content">
+            <h2>Study in France</h2>
+            <p>France is home to prestigious universities and Grandes Ecoles, offering excellent programs in engineering, arts, and business. The education system emphasizes innovation and cultural diversity.</p>
+            <p>With access to world-class facilities, scholarships, and a rich cultural experience, France is an ideal destination for higher education in the heart of Europe.</p>
+        </div>
+        <div class="container-099">
+            <!-- Universities Categories-09 -->
+            <div class="Categories-09">
+                <h2>Universities</h2>
+                <ul>
+                    <li>Sorbonne University</li>
+                    <li>Ecole Polytechnique</li>
+                    <li>University of Paris</li>
+                    <li>University of Bordeaux</li>
+                    <li>University of Lyon</li>
+                    <li>Sciences Po</li>
+                    <li>University of Strasbourg</li>
+                    <li>University of Montpellier</li>
+                    <li>Aix-Marseille University</li>
+                </ul>
+                
+            </div>
+        
+            <!-- Course Categories Categories-09 -->
+            <div class="Categories-09">
+                <h2>Course Categories</h2>
+                <ul>
+                    <li>Business and Management</li>
+                    <li>Engineering and Technology</li>
+                    <li>Arts and Humanities</li>
+                    <li>Science and Mathematics</li>
+                    <li>Health and Medicine</li>
+                    <li>Law and Legal Studies</li>
+                    <li>Hospitality and Tourism</li>
+                    <li>Architecture and Design</li>
+                    <li>Agriculture and Agribusiness</li>
+                    <li>Psychology and Counseling</li>
+                    <li>Marine Science and Oceanography</li>
+                    <li>Aviation and Aerospace</li>
+                </ul>
+            </div>
+        </div>
+     </div>
+             <!-- Popup Container -->
+
+    <div id="c10" class="popup-container">
+        <button class="close-button" onclick="closePopup()">×</button>
+        <center> <img src="./img/UNIVERSITIES/italy_banner_0.png" alt="Study in the USA" class="popup-image"></center>
+        <div class="colorful-line"></div>
+        <div class="popup-content">
+            <h2>Study in Italy</h2>
+            <p>Italy offers a blend of rich history, artistic heritage, and modern education. Its universities specialize in arts, architecture, and fashion, alongside strong programs in engineering and sciences.</p>
+            <p>Students experience world-class learning, affordable tuition, and the charm of Italian culture, making Italy an inspiring destination for international education.</p>
+        </div>
+        <div class="container-099">
+            <!-- Universities Categories-09 -->
+            <div class="Categories-09">
+                <h2>Universities</h2>
+                <ul>
+                    <li>University of Adelaide</li>
+                    <li>University of Technology Sydney (UTS)</li>
+                    <li>University of Newcastle</li>
+                    <li>Queensland University of Technology (QUT)</li>
+                    <li>RMIT University</li>
+                    <li>Griffith University</li>
+                    <li>La Trobe University</li>
+                    <li>Western Sydney University</li>
+                    <li>James Cook University</li>
+                    <li>Southern Cross University</li>
+                </ul>
+            </div>
+        
+            <!-- Course Categories Categories-09 -->
+            <div class="Categories-09">
+                <h2>Course Categories</h2>
+                <ul>
+                    <li>Business and Management</li>
+                    <li>Engineering and Technology</li>
+                    <li>Arts and Humanities</li>
+                    <li>Science and Mathematics</li>
+                    <li>Health and Medicine</li>
+                    <li>Law and Legal Studies</li>
+                    <li>Hospitality and Tourism</li>
+                    <li>Architecture and Design</li>
+                    <li>Agriculture and Agribusiness</li>
+                    <li>Psychology and Counseling</li>
+                    <li>Marine Science and Oceanography</li>
+                    <li>Aviation and Aerospace</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+    
+                 <!--------------------------------------Selecting Universities------------------------------------------------------>
+
+    <center><h2 id="countrys-tag">Universities Selection</h2></center> 
+    <section  class="country-tags">
+       
+
+        <span class="tag" data-country="uk">United Kingdom</span>
+                  <span class="tag" data-country="Ireland">Ireland</span>
+                  <span class="tag" data-country="UAE">UAE</span>
+                  <span class="tag" data-country="Canada">Canada</span>
+                  <span class="tag" data-country="UnitedStates">United States</span>
+                  <span class="tag" data-country="Switzerland">Switzerland</span>
+                  <span class="tag" data-country="Spain">Spain</span>
+                  <span class="tag" data-country="France">France</span>
+                  <span class="tag" data-country="Germany">Germany</span>
+                  
+
+                </section>
+
+              <div id="universities-container" class="hidden">
+                  <!-- The grid structure for university cards -->
+                  <div id="universities" class="universities-grid"></div>
+                  
+              </div>
+              <BR>
+      
+            <script>
+              // University data for each country
+              const universityData = {
+            uk:  [
+          { name: "University of Oxford", logo: "./img/UNIVERSITIES/uk/University of Oxford.png", description: "Prestigious university in the UK, known for its academic excellence." },
+          { name: "University of Cambridge", logo: "./img/UNIVERSITIES/uk/University of Cambridge.png", description: "World-renowned university famous for research and innovation." },
+          { name: "Imperial College London", logo: "./img/UNIVERSITIES/uk/Imperial College London.png", description: "Top university specializing in science, engineering, and business." },
+          // Row 2
+          { name: "London School of Economics and Political Science (LSE)", logo: "./img/UNIVERSITIES/uk/London School of Economics and Political Science.png ", description: "A leading university for social sciences and economics." },
+          { name: "University College London (UCL)", logo: "./img/UNIVERSITIES/uk/University College London.png", description: "Global university offering diverse academic programs." },
+          { name: "University of Edinburgh", logo: "./img/UNIVERSITIES/uk/University of Edinburgh.png", description: "Historic university with a focus on research excellence." },
+          // Row 3
+          { name: "King's College London", logo: "./img/UNIVERSITIES/uk/King's College London.png", description: "Known for its strong programs in law, humanities, and health sciences." },
+          { name: "University of Manchester", logo: "./img/UNIVERSITIES/uk/University of Manchester.png", description: "One of the largest universities in the UK, excelling in research." },
+          { name: "University of Warwick", logo: "./img/UNIVERSITIES/uk/University of Warwick_.png", description: "A top university with strengths in business, engineering, and social sciences." }
+      ],
+ 
+            Ireland: [
+           // Row 1
+          {name: "Trinity College Dublin", logo: "./img/UNIVERSITIES//ireland/trinity.png", description: "Ireland's top university, renowned for its historic campus and academic excellence." },
+          { name: "University College Dublin (UCD)", logo: "./img/UNIVERSITIES//ireland/university_college_dublin.png", description: "Leading research-intensive university in Ireland." },
+          { name: "National University of Ireland Galway (NUIG)", logo: "./img/UNIVERSITIES//ireland/university_of_galway.png", description: "Known for its excellence in teaching and research." },
+             // Row 2
+          { name: "University College Cork (UCC)", logo: "./img/UNIVERSITIES//ireland/University-College-Cork.png", description: "Prominent university in the south of Ireland." },
+          { name: "Dublin City University (DCU)", logo: "./img/UNIVERSITIES//ireland/dcu.png", description: "A dynamic institution with a focus on innovation." },
+          { name: "Maynooth University", logo: "./img/UNIVERSITIES//ireland/maynooth_university.png", description: "Ireland’s fastest-growing university." },
+            // Row 3
+          { name: "Royal College of Surgeons in Ireland (RCSI)", logo: "./img/UNIVERSITIES//ireland/Royal-College-of-Surgeons.png", description: "A leader in medical education and research." },
+          { name: "Technological University Dublin (TUD)", logo: "./img/UNIVERSITIES//ireland/technological-university-dublin.jpg", description: "Ireland’s first technological university." },
+          { name: "Waterford Institute of Technology (WIT)", logo: "./img/UNIVERSITIES//ireland/Waterford-Institute-of-Technology.png", description: "Known for its industry-relevant programs." },
+      ],
+            Spain: [
+                    // Spain
+    { name: "University of Barcelona", logo: "./img/UNIVERSITIES//Spain/University of Barcelona (1).png", description: "Spain’s top-ranked university with a historic campus." },
+    { name: "Autonomous University of Madrid (UAM)", logo: "./img/UNIVERSITIES/Spain/Autonomous University of Madrid.png", description: "Renowned for its innovative research and teaching." },
+    { name: "University of Valencia", logo: "./img/UNIVERSITIES/Spain/University of Valencia.png", description: "Known for its excellence in science and humanities." },
+    { name: "Complutense University of Madrid", logo: "./img/UNIVERSITIES/Spain/Complutense University of Madrid.png", description: "One of the oldest universities in the world." },
+    { name: "University of Granada", logo: "./img/UNIVERSITIES/Spain/University of Granada.png", description: "Renowned for its rich cultural heritage and academics." },
+    { name: "Polytechnic University of Catalonia", logo: "./img/UNIVERSITIES/Spain/Polytechnic University of Catalonia.png", description: "Leader in engineering and technology education." },
+    { name: "University of Navarra", logo: "./img/UNIVERSITIES/Spain/University of Navarra.png", description: "Prestigious private university in Spain." },
+    { name: "University of Seville", logo: "./img/UNIVERSITIES/Spain/University of Seville (1).png", description: "Historic university with strong academic programs." },
+    { name: "Pompeu Fabra University", logo: "./img/UNIVERSITIES/Spain/Pompeu Fabra University_ (1).png", description: "Young and dynamic university with a focus on research." },
+
+        ],
+            UAE: [ 
+                // UAE
+    { name: "United Arab Emirates University (UAEU)", logo: "./img/UNIVERSITIES/uae/United Arab Emirates University.png", description: "The oldest and top-ranked university in the UAE." },
+    { name: "American University of Sharjah (AUS)", logo: "./img/UNIVERSITIES/uae/American University of Sharjah.png", description: "Renowned for its strong engineering programs." },
+    { name: "University of Sharjah", logo: "./img/UNIVERSITIES/uae/University of Sharjah.png", description: "Offers a wide range of programs in various disciplines." },
+    { name: "Khalifa University", logo: "./img/UNIVERSITIES/uae/Khalifa University.png", description: "Focused on science and technology education." },
+    { name: "Zayed University", logo: "./img/UNIVERSITIES/uae/Zayed University.png", description: "A modern university catering to Emirati youth." },
+    { name: "Abu Dhabi University", logo: "./img/UNIVERSITIES/uae/Abu Dhabi University.png", description: "Known for its diverse student community." },
+    { name: "Ajman University", logo: "./img/UNIVERSITIES/uae/Ajman University.png", description: "Offers innovative programs in various fields." },
+    { name: "Manipal Academy of Higher Education - Dubai", logo: "./img/UNIVERSITIES/uae/Manipal Academy of Higher Education.png", description: "Part of the renowned Indian Manipal University network." },
+    { name: "Canadian University Dubai", logo: "./img/UNIVERSITIES/uae/Canadian University Dubai.png", description: "Focuses on a Canadian-based curriculum." },
+     ],
+    Canada: [
+        // Canada
+    { name: "University of Toronto", logo: "./img/UNIVERSITIES/canada/University of Toronto.png", description: "Canada’s top-ranked university with global recognition." },
+    { name: "University of British Columbia (UBC)", logo: "./img/UNIVERSITIES/canada/University of British Columbia.png", description: "World leader in research and teaching." },
+    { name: "McGill University", logo: "./img/UNIVERSITIES/canada/McGill University.png", description: "Prestigious university in Montreal." },
+    { name: "University of Alberta", logo: "./img/UNIVERSITIES/canada/University of Alberta.png", description: "Known for its excellent research programs." },
+    { name: "University of Waterloo", logo: "./img/UNIVERSITIES/canada/University of Waterloo.png", description: "Famous for its co-op programs in engineering and computer science." },
+    { name: "University of Montreal", logo: "./img/UNIVERSITIES/canada/University of Montreal.png", description: "Major hub for French-language education." },
+    { name: "Western University", logo: "./img/UNIVERSITIES/canada/western_universisty.png", description: "Known for its vibrant campus life." },
+    { name: "Queen's University", logo: "./img/UNIVERSITIES/canada/queens-university.png", description: "One of Canada’s oldest degree-granting institutions." },
+    { name: "Simon Fraser University (SFU)", logo: "./img/UNIVERSITIES/canada/simon-fraser-university.png", description: "Innovative programs with a focus on entrepreneurship." },
+
+    ],
+    UnitedStates: [
+        // United States
+    { name: "Harvard University", logo: "./img/UNIVERSITIES/usa/Harvard University.png", description: "World-renowned Ivy League university in Massachusetts." },
+    { name: "Stanford University", logo: "./img/UNIVERSITIES/usa/Stanford University.png", description: "Leading university for innovation and research in California." },
+    { name: "Massachusetts Institute of Technology (MIT)", logo: "./img/UNIVERSITIES/usa/MIT-Massachusetts-Institute-of-Technology.png", description: "Top-ranked university specializing in science and technology." },
+    { name: "University of California, Berkeley", logo: "./img/UNIVERSITIES/usa/University of California_Berkeley.png", description: "Prestigious public research university in California." },
+    { name: "University of Chicago", logo: "./img/UNIVERSITIES/usa/University of Chicago.png", description: "Renowned for its rigorous academics and research." },
+    { name: "Columbia University", logo: "./img/UNIVERSITIES/usa/columbia-university.png", description: "Top Ivy League university in New York City." },
+    { name: "California Institute of Technology (Caltech)", logo: "./img/UNIVERSITIES/usa/California Institute of Technology (Caltech).png", description: "Leader in natural sciences and engineering." },
+    { name: "Princeton University", logo: "./img/UNIVERSITIES/usa/Princeton University.png", description: "Ivy League university with a strong focus on liberal arts." },
+    { name: "Yale University", logo: "./img/UNIVERSITIES/usa/Yale University.png", description: "Historic Ivy League institution in Connecticut." },
+
+    ],
+    Switzerland: [
+        // Switzerland
+    { name: "ETH Zurich", logo: "./img/UNIVERSITIES/Switzerland/ETH Zurich.png", description: "World-leading university for technology and natural sciences." },
+    { name: "University of Zurich", logo: "./img/UNIVERSITIES/Switzerland/University of Zurich.png", description: "Top-ranked university in the heart of Zurich." },
+    { name: "University of Geneva", logo: "./img/UNIVERSITIES/Switzerland/University of Geneva.png", description: "Renowned for its international focus and research excellence." },
+    { name: "University of Basel", logo: "./img/UNIVERSITIES/Switzerland/University of Basel.png", description: "Switzerland’s oldest university with a strong academic tradition." },
+    { name: "EPFL", logo: "./img/UNIVERSITIES/Switzerland/epfl_.png", description: "Leader in engineering and technology fields." },
+    { name: "University of Lausanne", logo: "./img/UNIVERSITIES/Switzerland/Lausanne.png", description: "Focuses on interdisciplinary research and education." },
+    { name: "University of Bern", logo: "./img/UNIVERSITIES/Switzerland/University of Bern.png", description: "Known for its diverse programs and quality education." },
+    { name: "USI Università della Svizzera italiana", logo: "./img/UNIVERSITIES/Switzerland/USI Università della Svizzera italiana.png", description: "Prominent university in the Italian-speaking part of Switzerland." },
+    { name: "FHNW University of Applied Sciences", logo: "./img/UNIVERSITIES/Switzerland/FHNW University of Applied Sciences_.png", description: "Innovative and practice-oriented university." },
+
+    ],
+    France: [  
+        // France
+    { name: "Sorbonne University", logo: "./img/UNIVERSITIES/france/Sorbonne University.png", description: "Prestigious university in Paris, known for arts and humanities." },
+    { name: "Ecole Polytechnique", logo: "./img/UNIVERSITIES/france/Ecole Polytechnique.png", description: "Leader in science and engineering education." },
+    { name: "University of Paris", logo: "./img/UNIVERSITIES/france/University of Paris.png", description: "Historic university offering diverse programs." },
+    { name: "University of Bordeaux", logo: "./img/UNIVERSITIES/france/University of Bordeaux.png", description: "Known for its excellence in science and research." },
+    { name: "University of Lyon", logo: "./img/UNIVERSITIES/france/University of Lyon.png", description: "Dynamic university with a strong focus on innovation." },
+    { name: "Sciences Po", logo: "./img/UNIVERSITIES/france/Sciences-Po.png", description: "World-renowned for political science and international relations." },
+    { name: "University of Strasbourg", logo: "./img/UNIVERSITIES/france/Université-de-Strasbourg.png", description: "Prominent university with a strong research focus." },
+    { name: "University of Montpellier", logo: "./img/UNIVERSITIES/france/university-of-montpellier.png", description: "Known for its expertise in health and environmental sciences." },
+    { name: "Aix-Marseille University", logo: "./img/UNIVERSITIES/france/Aix-Marseille University.png", description: "Largest university in France, offering diverse programs." },
+    ],
+       
+                Germany: [
+                            // Germany
+            { name: "Technical University of Munich (TUM)", logo: "./img/UNIVERSITIES/germany/Technical University of Munich.png", description: "Top-ranked German university specializing in engineering and technology." },
+            { name: "Heidelberg University", logo: "./img/UNIVERSITIES/germany/Heidelberg University.png", description: "Germany’s oldest university, known for its strong research programs." },
+            { name: "Ludwig Maximilian University of Munich (LMU)", logo: "./img/UNIVERSITIES/germany/Ludwig Maximilian University of Munich (LMU).png", description: "World-class university in the heart of Munich." },
+            { name: "University of Freiburg", logo: "./img/UNIVERSITIES/germany/University_Freiburg.png", description: "Renowned for its interdisciplinary research." },
+            { name: "RWTH Aachen University", logo: "./img/UNIVERSITIES/germany/RWTH Aachen University.png", description: "A leader in engineering and technology fields." },
+            { name: "University of Bonn", logo: "./img/UNIVERSITIES/germany/University of Bonn.png", description: "Prominent university with strong research focus." },
+            { name: "University of Hamburg", logo: "./img/UNIVERSITIES/germany/University of Hamburg.png", description: "Known for its vibrant academic community." },
+            { name: "University of Stuttgart", logo: "./img/UNIVERSITIES/germany/University of Stuttgart.png", description: "Specializes in engineering and natural sciences." },
+            { name: "University of Cologne", logo: "./img/UNIVERSITIES/germany/University of Cologne.png", description: "One of the oldest universities in Europe." },
+                            ],
+              };
+      
+              // Display universities based on the clicked country
+              document.querySelectorAll(".tag").forEach((tag) => {
+                  tag.addEventListener("click", () => {
+                      const country = tag.dataset.country;
+                      const container = document.getElementById("universities");
+                      const universitiesContainer = document.getElementById("universities-container");
+      
+                      // Clear existing universities
+                      container.innerHTML = "";
+      
+                      // Get universities for the selected country
+                      if (universityData[country]) {
+                          universityData[country].forEach((university) => {
+                              const card = document.createElement("div");
+                              card.className = "university-card";
+                              card.innerHTML = `
+                                  <img src="${university.logo}" alt="${university.name}">
+                                  <h4>${university.name}</h4>
+                                  <p>${university.description}</p>
+                              `;
+                              container.appendChild(card);
+                          });
+                      }
+      
+                      // Show the universities container
+                      universitiesContainer.classList.remove("hidden");
+                  });
+              });
+          </script>
+                 <!-------------------------------------Process Overview----------------------------------->
+                 <center ><h2 id="process-overview">Process Overview</h2></center>
+                 <section  class="timeline2">
+                     <ul>
+                         <li>
+                             <div>
+                                 <time>Counselling Call</time>
+                                 The journey begins with a counseling call where students receive personalized guidance based on their academic background, career aspirations, and personal preferences. This step involves a thorough understanding of the student’s goals, exploring their interests, and identifying potential challenges. The counselor explains the opportunities available in various study destinations, including program options, eligibility criteria, and future prospects. This interaction sets the foundation for a smooth and well-informed application process.
+                             </div>
+                             <span class="time">
+                                 <span style="color: black;font-family: 'Jost'; font-size: 20px;  font-weight: bold;">Step 1</span>
+             
+                             </span>
+                         </li>
+                         <li>
+                             <div>
+                                 <time>Selecting Universities</time>
+                                 After the understanding of the student's needs and aspirations, the process of university selection begins. This involves shortlisting institutions that are in line with the student's chosen program, budget, and preferred location. Detailed discussions about university rankings, facilities, faculty, and global reputation help the student make an informed choice. Students are also guided on application deadlines, scholarships, and additional criteria that might enhance their admission chances.
+                             </div>
+                             <span class="time">
+                                 <span style="color: black; font-family: 'Jost'; font-size: 20px;  font-weight: bold;">Step 2</span>
+             
+             
+                             </span>
+                         </li>
+                         <li>
+                             <div>
+                                 <time>Document Collection</time>
+                                 The next step is the meticulous collection of all the required documents. This includes academic transcripts, certificates, identification proofs, and test scores such as IELTS or TOEFL. Each document is checked for completeness, accuracy, and compliance with university requirements. Students are provided with a checklist to ensure that no critical paperwork is missed. This phase is crucial as any discrepancies in the documents can delay the application process.
+                             </div>
+                             <span class="time">
+                                 <span style="color: black;font-family: 'Jost'; font-size: 20px;  font-weight: bold;">Step 3</span>
+                             </span>
+                         </li>
+                         <li>
+                             <div>
+                                 <time>Application Processed</time>
+                                 After placing all documents, the application procedure is activated. Applications are presented to chosen universities either on online platforms or through direct writing. A lot of concentration is taken when filling up forms correctly and adhering strictly to the deadline. Application progress of every student will be tracked keenly, with students updated about any move by the university.
+                             </div>
+                             <span class="time">
+                                 <span style="color: black;font-family: 'Jost'; font-size: 20px;  font-weight: bold;">Step 4</span>
+                             </span>
+                         </li>
+                         <li>
+                             <div>
+                                 <time>Receiving Offer Letter</time>
+                                 Universities issue offer letters to successful candidates after a review of the submitted application. This step is a major milestone in the process. Counselors assist their students in understanding the details of the offer letter, explaining its terms and conditions about tuition fees, deadlines of enrollment, and other requirements as well. Students are encouraged to accept the offer well within the given time to fill up the available slot of the program.
+                             </div>
+                             <span class="time">
+                                 <span style="color: black;font-family: 'Jost'; font-size: 20px;  font-weight: bold;">Step 5</span>
+                             </span>
+                         </li>
+                         <li>
+                             <div>
+                                 <time>Payment of Fee to the University</time>
+                                 Once the offer is accepted, it is followed by the payment of tuition fees to the university, which confirms the admission of a student. Students are instructed on how to make payments: wire transfers and online services, so that the transaction is made securely and effectively. Counselors also advise the students on how to receive official payment receipts and confirm if the university has received acknowledgement.
+                             </div>
+                             <span class="time">
+                                 <span style="color: black;font-family: 'Jost'; font-size: 20px;  font-weight: bold;">Step 6</span>
+                             </span>
+                         </li>
+                         <li>
+                             <div>
+                                 <time>Visa Application</time>
+                                 This will also mean facilitating their student's visa application by preparing any form of documentation including proof of admission, financial statements, identification, and so forth. Here, counselors outline step by step how to file the student's visa and arrange interviews or biometric verification if applicable. Mock interviews are taken to prepare them for this visa process. The entire support is given up until their visa is received.
+                             </div>
+                             <span class="time">
+                                 <span style="color: black;font-family: 'Jost'; font-size: 20px;  font-weight: bold;">Step 7</span>
+                             </span>
+                         </li>
+                     </ul>
+                    </section>  
+    <!---------------------------Explore Your Future Courses--------------------->
+    <br>
+        <br>
+        <br>
+        <br>
+        <!-- Parallax Section with Heading -->
+       <center><div id ="parallax-container_1"class="parallax-container">
+            <h1 class="parallax-heading">Learning and Career Options</h1>
+        </div></center> 
+            <br>  
+            <br> 
+            <br> 
+        <!---------------------------------------Explore a Range of Engineering Programs------------------------------------------------------------------>
+        <section id="prepare-to-depart">
+            <div class="service-section-unique">
+                
+                <div class="text-container-unique">
+                    <h2>Explore a Range of Engineering Programs</h2>
+                    <p>Discover the world of innovation and problem-solving through our diverse engineering courses. Acquire essential skills and knowledge to create, enhance, and shape the technologies that define our society and future.</p>
+                    <div class="accordion-menu-unique">
+                        <ul>
+                            <h3>What You Can Explore:</h3>
+                            <ul>
+                                <li><strong>Mechanical Engineering:</strong> Learn to design, analyze, and manufacture advanced mechanical systems, ranging from engines to robotics.</li>
+                                <li><strong>Civil Engineering:</strong> Master the skills to design and construct critical infrastructure, including bridges, roads, and buildings.</li>
+                                <li><strong>Electrical Engineering:</strong> Dive into the study of electronics, circuits, and power systems that drive modern technological advancements.</li>
+                                <li><strong>Computer Engineering:</strong> Explore the integration of hardware and software to build next-generation computing systems.</li>
+                                <li><strong>Aerospace Engineering:</strong> Take flight with programs focused on designing cutting-edge aircraft, spacecraft, and propulsion systems.</li>
+                                
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="image-container-unique">
+                    <img src="./img/UNIVERSITIES/engineering_2.png" alt="EngineeringCourses"/>
+                    <img src="./img/UNIVERSITIES/engineering_3.png" alt="EngineeringCourses"/>
+                </div>
+            </div>
+        </section>
+          
+        <br>
+<!-------------------------------------------------Medical Courses-----------------------------------------------------------------------------> 
+<section id="medical-courses">
+    <div class="service-section-unique">
+        <div class="image-container-unique">
+            <img src="./img/UNIVERSITIES/medical_5.png" alt="EngineeringCourses"/>
+            <img src="./img/UNIVERSITIES/medical_4.png" alt="EngineeringCourses"/>
+        </div>
+      <div class="text-container-unique">
+        <h2>Medical Courses</h2>
+        <p>
+          Embark on a journey within our medical programs, where you’ll learn how to save lives and improve healthcare. Dive into the study of anatomy, diseases, treatments, and patient care to become a skilled healthcare professional.
+        </p>
+        <div class="accordion-menu-unique">
+          <ul>
+            
+              <h3>What You Can Explore:</h3>
+            <ul>
+                <li><strong>Medicine (MBBS/MD):</strong> Comprehensive training to diagnose and treat illnesses, prepare for a rewarding career as a doctor.</li>
+                <li><strong>Dentistry (BDS/DDM):</strong> Learn dental care and treatments, focusing on oral health and patient comfort.</li>
+                <li><strong>Pharmacy (PharmD):</strong> Study drug formulations, therapeutic uses, and healthcare management.</li>
+                <li><strong>Nursing (BSN):</strong> Gain skills in patient care, clinical practices, and healthcare system navigation.</li>
+                <li><strong>Biomedical Science (BSc):</strong> Explore the scientific foundations of medicine, including genetics, microbiology, and biochemistry.</li>
+            </ul>
+            
+          </ul>
+        </div>
+      </div>
+       
+    </div>
+  </section>
+   <!---------------------------------------Explore a Range of Engineering Programs------------------------------------------------------------------>
+   <section id="prepare-to-depart">
+    <div class="service-section-unique">
+        
+        <div class="text-container-unique">
+            <h2>Science-Related Courses</h2>
+            <p>
+                Uncover the wonders of exploration through our array of science-related courses. Immerse yourself in subjects like biology, chemistry, physics, and environmental science as you strive to understand the world and contribute to groundbreaking advancements.
+            </p>
+            <div class="accordion-menu-unique">
+                <ul>
+                    <h3>What You Can Explore:</h3>
+                    <ul>
+                        <li><strong>Biology:</strong> Study living organisms, their structure, function, and evolution to understand the intricacies of life.</li>
+                        <li><strong>Chemistry:</strong> Delve into the composition, structure, properties, and reactions of matter to innovate in areas like pharmaceuticals and energy.</li>
+                        <li><strong>Physics & Mathematics:</strong> Explore the fundamental principles of the universe, from mechanics to quantum theory, and enhance problem-solving skills.</li>
+                        <li><strong>Computer Science:</strong> Learn to design and develop software, algorithms, and systems that drive innovation in technology.</li>
+                        <li><strong>Data Science:</strong> Analyze and interpret complex data to uncover trends, patterns, and insights that drive decisions in business and research.</li>
+
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <div class="image-container-unique">
+            <img src="./img/UNIVERSITIES/Science_1.png" alt="EngineeringCourses"/>
+            <img src="./img/UNIVERSITIES/science.png" alt="EngineeringCourses"/>
+        </div>
+   
+</section>
+
+
+  
+<br>
+  <!--------------------------------------------Law & Legal Courses------------------------------------------------------------------------> 
+  <section id="prepare-to-depart">
+    <div class="service-section-unique">
+        <div class="image-container-unique">
+            <img src="./img/UNIVERSITIES/law_1.png" alt="EngineeringCourses"/>
+            <img src="./img/UNIVERSITIES/law_2.png" alt="EngineeringCourses"/>
+        </div>
+        <div class="text-container-unique">
+            <h2>Law & Legal Courses</h2>
+            <p>
+                Immerse yourself in the intricacies of the legal system with our law courses. Develop a foundation in legal principles, delve into captivating case studies, and gain insight into courtroom procedures as you forge your path toward making a meaningful impact within the justice system.
+            </p>
+            <div class="accordion-menu-unique">
+                <ul>
+                    <h3>What You Can Explore:</h3>
+                    <ul>
+                        <li><strong>Bachelor of Laws (LLB):</strong> Lay the foundation for a legal career with a comprehensive understanding of law and legal practices.</li>
+                        <li><strong>International Business Law:</strong> Understand the legal aspects of international trade, commerce, and business relations across borders.</li>
+                        <li><strong>Master of Laws (LLM):</strong> Deepen your legal knowledge and expertise in a specific area of law through advanced study.</li>
+                        <li><strong>International Law:</strong> Explore the rules and principles that govern the relationships between nations and international entities.</li>
+                        <li><strong>Corporate Law:</strong> Focus on the legal framework surrounding business organizations, mergers, acquisitions, and corporate governance.</li>
+                        
+                    </ul>
+                </ul>
+            </div>
+        </div>
+      
+    </div>
+</section>
+
+    
+<!-----------------------------Management Programs--------------------->
+
+<section id="prepare-to-depart">
+<div class="service-section-unique">
+    
+    <div class="text-container-unique">
+        <h2>Explore a Range of Management Courses</h2>
+        <p>Enhance your leadership and decision-making skills through our range of management courses. Build your skill and knowledge bases for organizational leadership, resource management, and innovation in a range of industries.</p>
+        <div class="accordion-menu-unique">
+            <ul>
+                <h3>What You Can Explore:</h3>
+                <ul>
+                    <li><strong>Business Administration:</strong> Gain insights into organizational management, finance, and strategy.</li>
+                    <li><strong>Marketing Management:</strong> Learn how to promote brands, analyze markets, and develop effective campaigns.</li>
+                    <li><strong>Human Resources Management:</strong> Learn how to manage personnel, develop policies, and build organizational culture.</li>
+                    <li><strong>Project Management:</strong> Understand planning, executing, and leading a project efficiently and effectively.</li>
+                    <li><strong>Operations Management:</strong> Explore process optimization, supply chain management, and quality control.</li>
+                    
+                </ul>
+            </ul>
+        </div>
+    </div>
+    <div class="image-container-unique">
+        <img src="./img/UNIVERSITIES/hr_2.png" alt="ManagementCourses"/>
+        <img src="./img/UNIVERSITIES/hr_1.png" alt="ManagementCourses"/>
+    </div>
+</div>
+</section>
+
+<!-----------------------------Hospitality and Tourism------------------>
+<section id="prepare-to-depart">
+<div class="service-section-unique">
+    <div class="image-container-unique">
+        <img src="./img/UNIVERSITIES/travel_1.jpg" alt="Hospitality and Tourism Courses"/>
+        <img src="./img/UNIVERSITIES/event_3.png" alt="Hospitality and Tourism Experiences"/>
+    </div>
+    <div class="text-container-unique">
+        <h2>Hospitality and Tourism</h2>
+        <p>Imagine a career where you bring joy to people's lives by creating unforgettable experiences. Whether it’s managing luxury hotels, organizing dream vacations, or planning incredible events, our hospitality and tourism programs will help you turn your passion into a profession.</p>
+        <div class="accordion-menu-unique">
+            <ul>
+                <h3>What You Can Explore:</h3>
+                <ul>
+                    <li><strong>Hotel Management:</strong> Learn how to deliver exceptional guest experiences and run smooth operations in the hospitality industry.</li>
+                    <li><strong>Travel and Tourism:</strong> Dive into the art of crafting memorable journeys and promoting must-visit destinations.</li>
+                    <li><strong>Event Management:</strong> Master the skills to create magical moments through perfectly planned events.</li>
+                    <li><strong>Culinary Arts:</strong> Unleash your creativity in the kitchen and turn your love for food into a fulfilling career.</li>
+                    <li><strong>Resort and Spa Management:</strong> Explore the luxurious side of hospitality by managing world-class wellness retreats.</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+    
+</div>
+</section>
+<!----------------------------Media and Communications------------------->
+<section id="prepare-to-depart">
+<div class="service-section-unique">
+    
+    <div class="text-container-unique">
+        <h2>Media and Communication</h2>
+        <p>In a world driven by stories, ideas, and connections, media and communications offer you a chance to shape how people see and experience the world. Whether it’s through creative storytelling, strategic marketing, or digital innovation, this field empowers you to make your voice heard.</p>
+        <div class="accordion-menu-unique">
+            <ul>
+                <h3>What You Can Explore:</h3>
+                <ul>
+                    <li><strong>Journalism:</strong> Bring stories to life by uncovering the truth and sharing impactful narratives with the world.</li>
+                    <li><strong>Advertising and Public Relations:</strong> Learn how to craft compelling campaigns that build brands and foster trust.</li>
+                    <li><strong>Digital Media:</strong> Explore the fast-paced world of social media, content creation, and digital storytelling.</li>
+                    <li><strong>Film and Television Production:</strong> Dive into the art of visual storytelling and create captivating visual content.</li>
+                    <li><strong>Media Strategy and Analysis:</strong> Understand the trends shaping media landscapes and develop strategies that influence audiences.</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+    <div class="image-container-unique">
+        <img src="./img/UNIVERSITIES/media_2.png" alt="Media and Communications Courses"/>
+        <img src="./img/UNIVERSITIES/media_1.png" alt="Media and Communications Careers"/>
+    </div>
+</div>
+</section>
+
+<!-------------------------------Potential with IT Courses---------------------->
+
+<section id="prepare-to-depart">
+<div class="service-section-unique">
+    <div class="image-container-unique">
+        <img src="./img/UNIVERSITIES/it_course_1.png" alt="IT Courses"/>
+        <img src="./img/UNIVERSITIES/it_courses_2.png" alt="Technology and Innovation"/>
+    </div>
+    <div class="text-container-unique">
+        <h2>IT Courses</h2>
+        <p>Technology is at the heart of our modern world, driving innovation and shaping the future. Whether you're passionate about coding, data, or cybersecurity, these IT courses are designed to help you master the skills needed to thrive in this ever-evolving industry.</p>
+        <div class="accordion-menu-unique">
+            <ul>
+                <h3>What You Can Explore:</h3>
+                <ul>
+                    <li><strong>Software Development:</strong> Learn to build applications that solve real-world problems using modern programming languages.</li>
+                    <li><strong>Data Science and Analytics:</strong> Discover the power of data to make smarter decisions and drive innovation.</li>
+                    <li><strong>Cybersecurity:</strong> Gain the skills to protect systems and networks from evolving digital threats.</li>
+                    <li><strong>Cloud Computing:</strong> Dive into the world of scalable and flexible cloud solutions shaping global IT infrastructure.</li>
+                    <li><strong>Artificial Intelligence and Machine Learning:</strong> Explore cutting-edge technologies that redefine how machines and humans interact.</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+   
+</div>
+</section>
+<br>
+<br>               
+                    
+                    <!------------------------------- Brochure Section ---------------------->
+
+                    
+
+
+ <div class="brochure-container">
+    <div class="brochure-image">
+        <img src="./img/UNIVERSITIES/plane.png" alt="Brochure Image">
+    </div>
+    <div class="brochure-content">
+        <h3>Study Abroad Brochure</h3>
+        <p>Explore essential information about studying abroad, from application processes and eligibility to choosing the right country for your education. Fill out the form to download the brochure.</p>
+        <button id="downloadBtn">Get Brochure</button>
+    </div>
+</div>
+
+<!-- Modal Form -->
+<div id="formModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Fill in your details to get the brochure</h2>
+        <form id="detailsForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required>
+            
+        <!-- ---------------- -->
+        <div class="btn-container">
+            <button class="button">
+                <span class="default">SUBMIT</span>
+                <span class="success">
+                    <svg viewBox="0 0 16 16">
+                        <polyline points="3.75 9 7 12 13 5"></polyline>
+                    </svg>Envoyé
+                </span>
+                <svg class="trails" viewBox="0 0 33 64">
+                    <path d="M26,4 C28,13.3333333 29,22.6666667 29,32 C29,41.3333333 28,50.6666667 26,60"></path>
+                    <path d="M6,4 C8,13.3333333 9,22.6666667 9,32 C9,41.3333333 8,50.6666667 6,60"></path>
+                </svg>
+                <div class="plane">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                </div>
+            </button>
+        </div>
+
+           <!-- ---------------- -->
+        </form>
+    </div>
+</div>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzjPoxzA72AcmMFHbvNuEWoEiJBo8Kzj-t83WhnCcY2_lj82dbWLOgUnZ-0krAbajP2ng/exec'; // Replace with your Apps Script URL
+    const form = document.getElementById('detailsForm');
+    const modal = document.getElementById('formModal');
+    const downloadBtn = document.getElementById('downloadBtn');
+    const closeBtn = document.querySelector('.close-btn');
+
+    // Show Modal
+    downloadBtn.addEventListener('click', () => {
+        modal.style.display = 'block';
+    });
+
+    // Close Modal
+    closeBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    // Submit Form
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        fetch(scriptURL, { method: 'POST', body: formData })
+            .then(response => {
+                alert('Thank you! Your details have been submitted.');
+                form.reset();
+                modal.style.display = 'none'; // Close modal
+                // Trigger PDF Download
+                window.location.href = './img/COEQUAL SERVICES Brochure.pdf'; // Replace with the actual PDF URL
+            })
+            .catch(error => {
+                alert('Error submitting the form. Please try again.');
+                console.error('Error!', error);
+            });
+    });
+</script>
+                 <!------------------------------- Brochure Section ends---------------------->
+ <div class="share-wrapper" onClick="toggleClass();">
+      <div class="share-button">
+        <div class="share-button__span-wrapper">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="share-url url-1">
+        <a href="https://www.instagram.com" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <div class="share-url url-2">
+        <a href="https://www.youtube.com" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+      <div class="share-url url-3">
+        <a href="mailto:someone@example.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+      <div class="share-url url-4">
+        <a href="https://www.facebook.com" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+    </div>
+    
+      <!-------------------------------sharelink ends-------------------->
+    <!-- Footer Start -->
+      <footer class="footer-10">
+      <div class="container-10">
+        <div class="column-10">
+          <a href="manpowerconsultancy.html"
+            ><img
+              src="img/coequalserviceslogo.png"
+              alt="Company Logo"
+              width="200"
+              height="150"
+              class="f-logo-10"
+          /></a>
+          <p class="footer-content-logo-10">
+            Our focus involves with Technology, Financial Services, Telecom &
+            Media, Charity/Welfare Foundation and work towards enhancement of
+            communities like Health, Education, Empowerment and Environment.
+          </p>
+        </div>
+        <div class="column-10" id="col-f-10">
+          <h3>Quick Links</h3>
+          <ul class="content-f-10">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="career.php">Careers</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="contact.php">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="column-10" id="col-f-10">
+          <h3>Our Services</h3>
+          <ul class="content-f-10">
+            <li><a href="manpowerconsultancy.html">Manpower Consultancy</a></li>
+            <li><a href="eventsprototype.html">COEQUAL Events</a></li>
+            <li><a href="studyabroad.html">Study Abroad</a></li>
+          </ul>
+        </div>
+        <div class="column-10" id="col-f-10">
+          <h3>COEQUAL Group Of Companies</h3>
+          <ul class="content-f-10">
+            <li>
+              <a href="https://www.coequalinfotech.com">COEQUAL Infotech</a>
+            </li>
+            <li>
+              <a href="https://www.coequalfoundation.com">COEQUAL Foundation</a>
+            </li>
+            <li><a href="https://www.coequalnidhi.com">COEQUAL Nidhi</a></li>
+          </ul>
+        </div>
+        <div class="column-10" id="col-f-10">
+          <h3>Contact Us</h3>
+          <p class="contact1-f-10">
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:+91-80-29909931">+91-80-29909931</a> <br />
+          </p>
+          <p class="contact2-f-10">
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:+91-80-29909932">+91-80-29909932</a><br />
+            <br />
+            <a href="mailto:info@coequalservices.com" class="mail-10"
+              ><i class="fas fa-envelope"></i
+              >&nbsp;&nbsp;info@coequalservices.com</a
+            >
+          </p>
+          <div class="social-icons-10">
+            <a
+              href="https://www.facebook.com/people/COEQUAL-SERVICES/100088693338516/?_rdr"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+            <a href="https://in.linkedin.com/company/coequal-services"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://www.instagram.com/coequal_services/"
+              ><i class="fab fa-instagram-square"></i
+            ></a>
+            <a
+              href="https://api.whatsapp.com/send?phone=+919606456981&text=Hello"
+              ><i class="fab fa-whatsapp-square"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="copyright-10">
+        <p>Copyright &copy; 2025 Coequal Services. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Footer End -->
+     
+    <script src="scripts.js"></script>
+
+
+
+    <!-- Back to Top -->
+    <!--<a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>-->
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+
+
+<!-- // If the scroll position is greater than 700px, show the menu -->
+<script>
+    // Scroll to target section on menu item click
+document.querySelectorAll('.new-menu-item').forEach(item => {
+    item.addEventListener('click', function () {
+        const targetId = this.getAttribute('data-target');
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+            const offset = targetSection.offsetTop - (window.innerHeight / 3.6) + (targetSection.offsetHeight / 6);
+            window.scrollTo({
+                top: offset,
+                behavior: 'smooth' // Smooth scrolling
+            });
+        }
+    });
+});
+
+// Toggle menu visibility based on scroll position
+const newMenu = document.querySelector(".new-menu");
+
+window.addEventListener("scroll", function () {
+    const scrollPosition = window.scrollY || window.pageYOffset; // Current scroll position
+
+    // If the scroll position is greater than 700px, show the menu
+    if (scrollPosition > 420) {
+        newMenu.classList.add("visible"); // Add visible class
+    } else {
+        newMenu.classList.remove("visible"); // Remove visible class when scrolling up
+    }
+});
+
+  </script>
+<script>
+ 
+    function checkScreenWidth() {
+      const floatingIcons = document.getElementById("floating-icons");
+  
+      if (window.innerWidth > 1068) {
+      
+        floatingIcons.style.display = "block";
+      } else {
+        
+        floatingIcons.style.display = "none";
+      }
+    }
+  
+    
+    checkScreenWidth();
+  
+    
+    window.addEventListener("resize", checkScreenWidth);
+  </script>
+  <script>
+window.addEventListener("scroll", function () {
+    const floatingIcons = document.getElementById("floating-icons");
+    if (window.scrollY > 1000) {
+      floatingIcons.style.opacity = "1"; // Make the icons visible
+      floatingIcons.style.transform = "translateX(0)"; // Move icons into view from the right
+    } else {
+      floatingIcons.style.opacity = "0"; // Hide the icons when scrolling up
+      floatingIcons.style.transform = "translateX(100px)"; // Move the icons out of view to the right
+    }
+  });
+  
+  </script>
+
+<script>
+    // Open Popup
+function openPopup(popupId) {
+document.getElementById(popupId).style.display = "block";
+document.querySelector(".popup-overlay").style.display = "block";
+}
+
+// Close Popup
+function closePopup() {
+document.querySelectorAll(".popup-container").forEach(popup => {
+    popup.style.display = "none";
+});
+document.querySelector(".popup-overlay").style.display = "none";
+}
+</script> 
+
+
+                 <!-------------------------------------Process Overview script ----------------------------------->
+  <script>
+        (function() {
+			 
+             'use strict';
+
+             // define variables
+             var timelines= document.querySelectorAll('.timeline2');
+              
+               function debounce(func, wait, immediate) {
+                   var timeout;
+                   return function() {
+                       var context = this, args = arguments;
+                       var later = function() {
+                           timeout = null;
+                           if (!immediate) func.apply(context, args);
+                       };
+                       var callNow = immediate && !timeout;
+                       clearTimeout(timeout);
+                       timeout = setTimeout(later, wait);
+                       if (callNow) func.apply(context, args);
+                   };
+               }
+               function callbackFunc() {
+                     var h,timeline, li,rect,parent_rect,i,items;
+                   for(h=0;h<timelines.length;h++){
+                         timeline=timelines[h];
+                           parent_rect=timeline.getBoundingClientRect();
+                          items = timeline.querySelectorAll(".timeline2 li");
+                       for (  i = 0; i < items.length; i++) {
+                           /*
+                         if (isElementInViewport(items[i])) {
+                           items[i].classList.add("in-view");				   
+                         }
+                         */
+                           li=items[i];
+                           rect = li.getBoundingClientRect();  
+                            
+                           if( (rect.bottom<=(parent_rect.top+(rect.height/2) ) ) || (rect.top >=(parent_rect.bottom-(rect.height/2)) ) ){
+                               //debugger;
+                               //li.style['background']='red';
+                               li.classList.remove("in-view");
+                               
+                           }else{
+                               //li.style['background']='white';
+                               li.classList.add("in-view");
+                           }
+                            
+                       }
+                   }
+               }
+               var updateLayout =debounce(function(e) {
+
+                   // Does all the layout updating here
+                   callbackFunc();
+                   
+               }, 500); // Maximum run of once per 500 milliseconds
+
+               // listen for events
+               window.addEventListener("load", callbackFunc);
+               window.addEventListener("resize", updateLayout);
+               window.addEventListener("scroll", callbackFunc);
+               for(var h=0;h<timelines.length;h++){
+                       var  timeline=timelines[h];
+                   timeline.addEventListener("scroll",callbackFunc );
+               }
+               
+            })();
+               
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+<script>
+  document.querySelectorAll('.button').forEach(button => {
+    let getVar = variable => getComputedStyle(button).getPropertyValue(variable);
+    button.addEventListener('click', e => {
+        if(!button.classList.contains('active')) {
+            button.classList.add('active');
+            gsap.to(button, {
+                keyframes: [{
+                    '--left-wing-first-x': 50,
+                    '--left-wing-first-y': 100,
+                    '--right-wing-second-x': 50,
+                    '--right-wing-second-y': 100,
+                    duration: .2,
+                    onComplete() {
+                        gsap.set(button, {
+                            '--left-wing-first-y': 0,
+                            '--left-wing-second-x': 40,
+                            '--left-wing-second-y': 100,
+                            '--left-wing-third-x': 0,
+                            '--left-wing-third-y': 100,
+                            '--left-body-third-x': 40,
+                            '--right-wing-first-x': 50,
+                            '--right-wing-first-y': 0,
+                            '--right-wing-second-x': 60,
+                            '--right-wing-second-y': 100,
+                            '--right-wing-third-x': 100,
+                            '--right-wing-third-y': 100,
+                            '--right-body-third-x': 60
+                        });
+                    }
+                }, {
+                    '--left-wing-third-x': 20,
+                    '--left-wing-third-y': 90,
+                    '--left-wing-second-y': 90,
+                    '--left-body-third-y': 90,
+                    '--right-wing-third-x': 80,
+                    '--right-wing-third-y': 90,
+                    '--right-body-third-y': 90,
+                    '--right-wing-second-y': 90,
+                    duration: .2
+                }, {
+                    '--rotate': 50,
+                    '--left-wing-third-y': 95,
+                    '--left-wing-third-x': 27,
+                    '--right-body-third-x': 45,
+                    '--right-wing-second-x': 45,
+                    '--right-wing-third-x': 60,
+                    '--right-wing-third-y': 83,
+                    duration: .25
+                }, {
+                    '--rotate': 60,
+                    '--plane-x': -8,
+                    '--plane-y': 40,
+                    duration: .2
+                }, {
+                    '--rotate': 40,
+                    '--plane-x': 45,
+                    '--plane-y': -300,
+                    '--plane-opacity': 0,
+                    duration: .375,
+                    onComplete() {
+                        setTimeout(() => {
+                            button.removeAttribute('style');
+                            gsap.fromTo(button, {
+                                opacity: 0,
+                                y: -8
+                            }, {
+                                opacity: 1,
+                                y: 0,
+                                duration: .2
+                            });
+                        }, 200);
+                    }
+                }]
+            });
+        }
+    });
+  });
+</script>
+   <script>
+    function toggleClass() {
+  const wrapper = document.querySelector('.share-wrapper');
+  wrapper.classList.toggle('open');
+}
+
+    </script>             
+</body>
+
+</html>
